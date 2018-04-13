@@ -1,0 +1,192 @@
+<div class="row" fadeInDirective>
+    <div class="col-lg-12 form-wrapper">
+        <h1 class="page-header">
+            Products Editor
+        </h1>
+        <form role="form" novalidate [formGroup]="productsForm" (ngSubmit)="saveProducts()">
+            <div class="form-group">
+                <label>Category</label>
+                <select [(ngModel)]="objProducts.categoryID" class="form-control"
+                        [formControl]="productsForm.controls['selectCategory']">
+                    <option value="">Select Category</option>
+                    <option *ngFor="let obj of objCatList" [value]="obj._id">{{obj.categoryName}}</option>
+                </select>
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['selectCategory']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>SubCategory</label>
+                <select [(ngModel)]="objProducts.subCategoryID" class="form-control"
+                        [formControl]="productsForm.controls['selectSubCategory']">
+                    <option value="">Select SubCategory</option>
+                    <option *ngFor="let obj of objSubCatList" [value]="obj._id">{{obj.subCategoryName}}</option>
+                </select>
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['selectSubCategory']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>Products</label>
+                <input class="form-control" [(ngModel)]="objProducts.productsTitle" name="productsTitle"
+                       placeholder="Enter Products Title" [formControl]="productsForm.controls['productsTitle']">
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['productsTitle']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>Model</label>
+                <input class="form-control" [(ngModel)]="objProducts.productsModel" name="productsModel"
+                       placeholder="Enter Products Model" [formControl]="productsForm.controls['productsModel']">
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['productsModel']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>Products Summary</label>
+                <textarea class="form-control" [(ngModel)]="objProducts.productsSummary"
+                          [formControl]="productsForm.controls['productsSummary']"
+                          name="productsSummary"
+                          placeholder="Enter Products Summary"></textarea>
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['productsSummary']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>Products Description</label>
+
+                <tiny-editor [value]="objProducts.productsDescription"
+                             [editorFormControl]="editorFormControl"
+                             (valueChange)="editorValueChange($event)"></tiny-editor>
+            </div>
+            <div class="form-group">
+                <label>Products Author</label>
+                <input class="form-control" name="role" [(ngModel)]="objProducts.productsAuthor"
+                       [formControl]="productsForm.controls['productsAuthor']"
+                       placeholder="Enter Products Author">
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['productsAuthor']"></control-messages>
+            </div>
+            <div class="form-group">
+                <label>Products Mobile Image</label>
+                <input class="form-control" name="role" [(ngModel)]="objProducts.productsMobileImage"
+                       [formControl]="productsForm.controls['productsMobileImage']"
+                       placeholder="Enter Products Mobile Image">
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['productsMobileImage']"></control-messages>
+            </div>
+
+            <div class="form-group">
+                <label>Choose Your Option</label>
+                <input class="form-control" name="role" [(ngModel)]="objProducts.chooseYourOption"
+                       [formControl]="productsForm.controls['chooseYourOption']"
+                       placeholder="Choose Your Option">
+                <control-messages [isSubmitted]="isSubmitted"
+                                  [control]="productsForm.controls['chooseYourOption']"></control-messages>
+            </div>
+
+            <div class="form-group">
+                <label>Publish Date</label>
+                <div class="form-group">
+
+                  <p-calendar [(ngModel)]="objProducts.productsDate" [readonlyInput]="true"
+                              [showIcon]="true"
+                              [minDate]="0"
+                              [formControl]="productsForm.controls['productsDate']"
+                              inputStyleClass="form-control, inline-cal"
+                              dateFormat="yy-mm-dd"></p-calendar>
+
+                    <control-messages [isSubmitted]="isSubmitted"
+                                      [control]="productsForm.controls['productsDate']"></control-messages>
+
+                </div>
+
+            </div>
+            <div class="form-group ">
+                <image-uploader [isSubmitted]="isSubmitted" [canvasSize]="canvasSize"
+                                [imageFormControl]="imageFormControl"
+                                (deleteImageEvent)="deleteImage($event)"
+                                [imageName]="fileName" [drawImagePath]="drawImagePath"
+                                (fileSelectedEvent)="changeFile($event)"></image-uploader>
+            </div>
+
+
+    <div class="row">
+        <div class="col-xs-12" formArrayName="variants">
+          <div class="row" 
+             *ngFor="let ingredientCtrl of productsForm.get('variants').controls; let i = index"
+             [formGroupName]="i"
+             style="margin-top: 10px;">
+            <div class="col-xs-2">
+            <label>KeyVariant</label>
+              <input type="text" class="form-control" formControlName="KeyVariant">
+            </div>
+
+            <div class="col-xs-1">
+            <label>Value</label>
+              <input type="text" class="form-control" formControlName="Value">
+            </div>
+
+            
+            <div class="col-xs-1">
+            <label>color</label>
+              <input type="text" class="form-control" formControlName="color">
+            </div>
+            <div class="col-xs-1">
+            <label>ImgURL</label>
+              <input type="text" class="form-control" formControlName="ImageURL">
+            </div>
+
+            <div class="col-xs-1">
+            <label>Body</label>
+              <input type="text" class="form-control" formControlName="Body">
+            </div>
+
+            <div class="col-xs-1">
+            <label>Bridge</label>
+              <input type="text" class="form-control" formControlName="Bridge" >
+            </div>
+
+             <div class="col-xs-2">
+            <label>VariantsDescription</label>
+              <input type="text" class="form-control" formControlName="Description" >
+            </div>
+
+             <div class="col-xs-1">
+            <label>Type</label>
+              <input type="text" class="form-control" formControlName="Type" >
+            </div>
+            
+             <div class="col-xs-1">
+            <label>Finish</label>
+              <input type="text" class="form-control" formControlName="Finish" >
+            </div>
+
+            <div class="col-xs-1">
+            <label>Delete</label><br>
+              <button class="btn btn-danger" (click)="onDeleteVariants(i)">X</button>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="button" class="btn btn-success" (click)="onAddVariants()">Add Variants</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   <br>
+
+
+            <div class="form-group ">
+
+                <label>
+                    <md-checkbox [checked]="objProducts.active" formControlName="active"
+                                 [(ngModel)]="objProducts.active">
+                        Active
+                    </md-checkbox>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" processing><i class="fa fa-floppy-o"></i>  Save</button>
+                        <button type="button" (click)="triggerCancelForm()" class="btn  btn-danger"><i class="fa fa-times"></i> Cancel</button>
+
+        </form>
+    </div>
+</div>
+

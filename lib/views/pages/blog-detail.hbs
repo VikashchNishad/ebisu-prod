@@ -1,0 +1,79 @@
+
+        <div class="row" style="background-color: #556B2F; margin-right: 0px;" >
+    <div class="col-xs-6 col-sm-8 col-lg-10 single-post-pan" style="background-color: #E6E6FA;">
+    {{#pagetitle 'page'}}
+    <title>{{data.blogDetailData.blogTitle}}</title>
+{{/pagetitle}}
+
+
+<header id="top-bar" class="navbar-fixed-top animated-header">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            {{!-- {{>shared/header/header-logo orgInfo=orgInfo}} --}}
+        </div>
+       <nav class="site-nav js-site-nav -in-v" style="height:100%">
+            <div class="main-menu">
+                <ul class="site-nav__list js-site-nav-list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/" >Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/products">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/store">Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                       {{!--  <li class="site-nav__item">
+                            <a class="site-nav__link" href="/news" >News/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                          <a class="site-nav__link" href="/blogs" style="font-size: 18px; font-weight: bold;">Blog/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/about-us" >About Us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/contact">Contact Us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+{{!-- {{data.blogDetailData.addedOn}} --}}
+{{>shared/article-detail-header title=data.blogDetailData.blogTitle author=data.blogDetailData.author  date=data.blogDetailData.addedOn  views=data.blogDetailData.articleViews}}
+
+<section class="single-post">
+            {{>blogs/blog-detail blogDetailObj=data.blogDetailData hostUrl=data.commonData.staticDataObj.hostUrl categoryObj=data.blogCategoryData categoryRelatedBlogCount=data.categoryRelatedBlogCount}}
+
+
+</section>
+
+        </div>
+
+    <div class="col-xs-6 col-sm-4 col-lg-2">
+    </div>
+    
+    </div>
+
+{{#pagetitle 'pagescripts'}}
+    {{>shared/article-comment urlSlog=data.blogDetailData.urlSlog disqusURL=data.commentSettingData.disqusURL}}
+{{/pagetitle}}

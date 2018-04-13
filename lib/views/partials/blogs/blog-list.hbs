@@ -1,0 +1,217 @@
+
+<style type="text/css">
+
+
+
+#blog-list {
+  padding: 0;
+}
+
+.blog-title {
+ min-height: 340px;   margin-left: -50px;
+}
+
+.author {
+color:#111; font:13px  bold;
+}
+
+.blog-title-list {
+width: 70%;
+}
+
+.blog-title-list a {
+  color: black; font-family: Century Gothic; font-weight: bold;
+}
+
+
+.blog-hr {
+  height:2px;border-width:0;color:gray;
+  background-color:black;
+  width: 50%;
+  margin-top: 15px;
+
+}
+
+.blogImg {
+width: 200px;
+height: 400px;
+}
+
+.blogSummary  {
+ height: 180px;
+}
+
+ 
+.blogSummary p {
+  font-size: 13px; line-height: 150%;
+}
+
+.readButton {
+   border-radius: 0; padding-left: 8px; padding-right: 8px;font-size: 11px; background: #fff; border: 1px solid grey; font-weight: bold;
+}
+
+.blog-title {
+    margin-left: -40px;
+
+}
+.blog-title h2 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------*/    
+
+@media screen and (max-width: 40.5em) {
+
+
+#blog-list {
+     padding: 0;
+    width: 95%;
+    border-bottom: 1px solid rgba(0, 0, 0, .0001);
+}
+
+.blog-title {
+     min-height: 340px;
+    width: 50%;
+    margin-left: 200px;
+    margin-top: -340px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.author {
+color:#111; font:13px  bold;
+}
+
+.blog-title-list {
+width: 70%;
+}
+
+.blog-title-list a {
+  color: black; font-family: Century Gothic; font-weight: bold;
+}
+
+
+.blog-hr {
+  height:2px;border-width:0;color:gray;
+  background-color:black;
+  width: 50%
+}
+
+.blog-title h2 {
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+
+.blogSummary  {
+ height: 180px;
+}
+
+ 
+.blogSummary p {
+  font-size: 11px; line-height: 150%;
+}
+
+.readButton {
+         border-radius: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 8px;
+    background: #fff;
+    border: 1px solid grey;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+
+
+.no-gutter {
+  width: 111%;
+}
+.blogImg {
+width: 170px;
+    height: 340px;
+}
+
+
+.blog-hr {
+   margin-top: 0px;
+    margin-bottom: 18px;
+    border: 0;
+    border-top: 1px solid #eee;
+
+}
+
+}
+    
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="2000ms"   style="padding:0;">
+   {{#checkAndBindList blogs}}
+  <div id="blog-list" class="col-sm-12 col-md-6 col-lg-6">
+      {{!-- <div class="one slide" style="background: blue;"> --}}
+    <blockquote style="display:none">
+        <span class="leftq quotes">&ldquo;</span>
+        <span class="rightq quotes">&bdquo; </span>
+    </blockquote>
+
+
+    <div class="row .no-gutter">
+        <div class="col-sm-6" style=" width: 50%;">
+            <img class="img-responsive blogImg" src="{{cloudinaryUrl bannerImage option='{}'}}" alt="{{bannerImageAltText}}">
+        </div>
+        <div class="col-sm-6 blog-title">
+                                            <br>
+            {{!-- <div class="blog-meta" style="text-align: justify; padding-left: 12px;"> --}}
+            <span><a class="author" href="">{{author}}</a></span>
+            <span style=" float: right;">{{date addedOn}}</span>
+
+           {{!--  <span>
+            {{#checkAndBindList tags}}
+            <a href="{{hostUrl}}/filter/blogs/{{urlSlogTag}}">{{tag}}</a>,
+            {{/checkAndBindList}}
+            </span> --}}
+            {{!-- </div> --}}
+
+            <div class="blog-title-list">
+                <h2> <a href="{{hostUrl}}/blog-detail/{{dateFormatter addedOn}}/{{urlSlog}}">{{blogTitle}}</a> </h2>
+            </div>
+            <hr class="blog-hr" align="left">
+            <div class="blogSummary">
+            <p>{{{blogSummary}}}</p>
+          </div>
+            <button onclick="location.href='{{hostUrl}}/blog-detail/{{dateFormatter addedOn}}/{{urlSlog}}';" class = "btn btn-sm readButton " href="{{hostUrl}}/blog-detail/{{dateFormatter addedOn}}/{{urlSlog}}" >Read More</button>
+        </div>
+            
+
+    </div>
+
+
+      {{!-- </div> --}}
+  </div>
+   {{else}}
+   {{>shared/no-data-found}}
+   {{/checkAndBindList}}
+</article>

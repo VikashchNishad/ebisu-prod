@@ -1,0 +1,448 @@
+{{#pagetitle 'page'}}
+    <title>Blog Articles | {{data.commonData.organizationInfoData.orgName}}</title>
+{{/pagetitle}}
+
+<style type="text/css">
+
+
+
+#blogRow {
+background-color:   #776f54; margin-right: 0px;
+}
+
+#blogRow .col-xs-6 {
+    background-color: #f0f0f0; width: 89%;
+}
+#blogRow .col-sm-8 {
+    background-color: #f0f0f0; width: 89%;
+}
+#blogRow .col-lg-10{
+    background-color: #f0f0f0; width: 89%;
+}
+
+
+.imgback {
+      background-image: url("http://res.cloudinary.com/dnsop2tei/image/upload/v1499233507/Blog_nzlebi.png");
+      background-size: 710px 700px;
+      height: 660px;
+    background-repeat: no-repeat;
+    background-position: right;
+    }
+
+.main-container{
+    
+    background: #776f54; /* fallback for old browsers */
+        margin: 22% 0 15% 22%;
+        width: 325px;
+        height: 190px;
+    overflow: hidden;
+    font-family: Century Gothic;
+    }
+.main-container h4 {
+         font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0px 3px 22px;
+    }
+
+.main-container p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Century Gothic; 
+  line-height: 22px;
+    line-height: 24px;
+  padding: 0 0 0 20px;
+    }
+    .main-container button {
+    margin: 3% 0 6% 6%;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #e7e7e7;
+    }
+     
+   .main-container button:hover { 
+    transition: 0.5s;
+    background-color: #fff;
+    color: #696969;
+    border: 2px solid #e7e7e7;
+
+    }
+.main-container hr { 
+    margin-top: 0px;
+    border-top: 1px solid #ccc;
+    width: 87%;
+    margin-bottom: 15px;
+
+    }
+#blog-list-page .col-sm-10{
+background-color: white; width: 86.33333333%;
+}
+
+/*----------------------------------------------------------------------------------------------*/    
+
+@media screen and (max-width: 40.5em) {
+    .collapse-main-menu {
+  text-align: center;
+  display: block;
+}
+
+
+
+#blogRow {
+background-color:   #776f54; margin-right: 0px;
+}
+
+#blogRow .col-xs-6 {
+    background-color: #f0f0f0; width: 100%;
+}
+#blogRow .col-sm-8 {
+    background-color: #f0f0f0; width: 100%;
+}
+#blogRow .col-lg-10{
+    background-color: #f0f0f0; width: 100%;
+}
+
+
+.imgback {
+            background-image: url(http://res.cloudinary.com/dnsop2tei/image/upload/v1499233507/Blog_nzlebi.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    height: 400px;
+    padding: 120px 0 0 60px;
+    }
+
+.main-container{
+    
+   background: #776f54;
+    margin: 0;
+    width: 170px;
+    height: 110px;
+    overflow: hidden;
+    font-family: Century Gothic;
+    }
+.main-container h4 {
+  font-size: 8px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 0 0 11px;
+    }
+
+.main-container p {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: Century Gothic;
+    line-height: 14px;
+    padding: 8px 0 0 10px;
+    }
+    .main-container button {
+    margin: 0% 0 6% 6%;
+    font-size: 7px;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 3px 6px 3px 6px;
+    }
+     
+   .main-container button:hover { 
+    transition: 0.5s;
+    background-color: #fff;
+    color: #696969;
+    border: 2px solid #e7e7e7;
+
+    }
+.main-container hr { 
+    margin-top: -4px;
+    border-top: 1px solid #ccc;
+    width: 87%;
+    margin-bottom: 1px;
+
+    }
+#blog-list-page .col-sm-10{
+background-color: white; width: 100%;
+}
+}
+
+
+
+}
+
+</style>
+
+{{!-- {{>shared/global-header headerTitle=activePageMenu}} --}}
+<header id="top-bar" class="navbar-fixed-top animated-header">
+    <div class="container-fluid">
+        <div class="navbar-header" style="padding-left: 25px;">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+<div class="navbar-brand">
+            <a href="/">
+                <img src="http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1504793743/organizationlogo_d9jx5c.png"
+                     alt="organizationlogo">
+            </a>
+        </div>
+            {{!-- {{>shared/header/header-logo orgInfo=orgInfo}} --}}
+        </div>
+
+
+
+<nav class="collapse navbar-collapse navbar-right" role="navigation">
+    <div class="collapse-main-menu">
+        <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+                <li>
+                    <a href="/products">Products</a>
+                </li>
+
+                <li>
+                    <a href="/store">Stores</a>
+                </li>
+
+                <li>
+                    <a href="/blogs" style="font-size: 18px; font-weight: bold;">Blogs</a>
+                </li>
+
+                <li>
+                    <a href="/about-us">About us</a>
+                </li>
+
+                {{!-- <li>
+                    <a href="/testimonial">Testimonials</a>
+                </li> --}}
+
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+       <nav class="site-nav js-site-nav -in-v" style="height:0%">
+            <div class="main-menu">
+                <ul class="site-nav__list js-site-nav-list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/" >Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/products">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/store">Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/news" >News/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                          <a class="site-nav__link" href="/blogs" style="font-size: 18px; font-weight: bold;">Blog&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/about-us" >About us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                         {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/testimonial" >Testimonials&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/contact">Contact us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div id="blogRow" class="row ">
+    <div class="col-xs-6 col-sm-8 col-lg-10">
+        <div class="row">
+            <div class="col-sm-12 imgback">
+            {{!--     <img  style="margin-left: 15px;" src="http://res.cloudinary.com/dnsop2tei/image/upload/v1499233507/Blog_nzlebi.png" class="img-responsive" alt="{{imageTitle}}" /> --}}
+                {{!-- <div class ="main-container">
+                    <h4 style="font-family: Century Gothic;">Test</h4>
+                    <hr>
+                    <p>Kadence lorem purple<br>ipsum 2016</p>
+                    <button class = "btn btn-sm " style="font-family: Century Gothic;" >Read More</button>
+                </div> --}}
+            </div>
+        </div>
+
+        <div id="blog-list-page" class="row" style="background-color: #776f54">
+            <div class="col-sm-2" style="width: 13.66666667%;"></div>
+            <div class="col-sm-10">
+                <div class="row .no-gutter">
+                        {{>blogs/blog-list hostUrl=data.commonData.staticDataObj.hostUrl blogs=data.blogData}}
+
+            {{#checkData data.blogData}}
+                                {{>shared/pagination pagination=data.pagination rootUrl=data.commonData.staticDataObj.blogHostUrl}}
+                            {{/checkData}}
+                </div>
+
+
+
+
+
+
+                            {{!-- <section id="testimonial">
+                                    <div class="row header_testimonial">
+                                        <h1></h1>
+                                    </div> --}}
+                                    {{!-- <div class="container-fluid" > --}}
+                                        {{!-- <div class="col-md-12" style="background: green;"> --}}
+                                            {{!-- {{>blogs/blog-list hostUrl=data.commonData.staticDataObj.hostUrl blogs=data.blogData}} --}}
+                                            {{!-- <div class="clarifix"></div> --}}
+                                                {{!-- {{#checkData data.blogData}}
+                                                    {{>shared/pagination pagination=data.pagination rootUrl=data.commonData.staticDataObj.blogHostUrl}}
+                                                {{/checkData}} --}}
+                                             {{!-- </div> --}}
+                                        {{!-- </div> --}}
+                                {{!-- <hr class="divider"/> --}}
+                <div class="clarifix"></div>
+                   {{!--  <div class="theme_reference">
+                       <img src="" style="width:100%;height:auto">
+                    </div> --}}
+                {{!-- </section> --}}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-xs-6 col-sm-4 col-lg-2"></div>
+</div>
+
+
+
+{{>shared/footer/footer}}
+
+{{!-- <div class="row" >
+    <div class="col-sm-10" style="background-color:black;">
+
+<div class="row">
+<div class="col-sm-6">
+
+</div>
+<div class="col-sm-6" style=" width: 100%; margin-left: 50px;">
+    <img style=" width: 100%; margin-left: 50px;" src="http://res.cloudinary.com/dnsop2tei/image/upload/v1499233507/Blog_nzlebi.png" class="img-responsive" alt="{{imageTitle}}" />
+</div>
+</div>
+
+
+
+<section id="testimonial">
+    <div class="container" style=" width: 100%;margin-left: 0px; margin-right:100px">
+        <div class="row header_testimonial">
+            <h1></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {{>blogs/blog-list hostUrl=data.commonData.staticDataObj.hostUrl blogs=data.blogData}}
+                <div class="clarifix"></div>
+                    {{#checkData data.blogData}}
+                        {{>shared/pagination pagination=data.pagination rootUrl=data.commonData.staticDataObj.blogHostUrl}}
+                    {{/checkData}}
+                 </div>
+            </div>
+        </div>
+    <hr class="divider"/>
+    <div class="clarifix"></div>
+    <div class="theme_reference">
+       <img src="" style="width:100%;height:auto">
+    </div>
+</section>
+    </div>
+
+    <div class="col-sm-2" style="background-color:red; height: 100%;">
+
+
+    </div>
+  </div>
+ --}}
+
+
+{{!--     <div class="col-md-1">
+    </div>
+<div class="col-md-4">              
+    <div class ="main-container">
+        <div class=" highlight" style="margin-left:0;">
+        <h2>Super Product Highlight</h2>
+                <div class="row">
+                    <ul>
+                        <li>Integer et malesuada turpis. Proin urna felis</li>
+                        <li>Integer et malesuada turpis. Proin urna felis.</li>
+                        <li>Integer et malesuada turpis. Proin urna felis.</li>
+                        <li>Integer et malesuada turpis. Proin urna felis.</li>
+                        <li>Integer et malesuada turpis. Proin urna felis.</li>
+                    </ul>
+                    </div>
+                    <div class="row">
+                    <button class = "btn btn-primary">Now</button>
+                    <button class = "btn btn-warning" >Read More</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+<div class="col-md-6" style="margin-right: 10px;">
+    <img src="http://res.cloudinary.com/dnsop2tei/image/upload/v1499233507/Blog_nzlebi.png" class="img-responsive" alt="{{imageTitle}}" />
+</div> --}}
+
+    {{!-- <section id="testimonial">
+        <div class="container" style=" width: 100%;margin-left: 0px; margin-right:100px">
+            <div class="row header_testimonial">
+                <h1></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{>blogs/blog-list hostUrl=data.commonData.staticDataObj.hostUrl blogs=data.blogData}}
+                    <div class="clarifix"></div>
+                        {{#checkData data.blogData}}
+                            {{>shared/pagination pagination=data.pagination rootUrl=data.commonData.staticDataObj.blogHostUrl}}
+                        {{/checkData}}
+                     </div>
+                </div>
+            </div>
+        <hr class="divider"/>
+        <div class="clarifix"></div>
+        <div class="theme_reference">
+           <img src="" style="width:100%;height:auto">
+        </div>
+    </section> --}}
+

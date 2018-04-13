@@ -1,0 +1,754 @@
+{{#pagetitle 'page'}}
+    <title>{{data.commonData.organizationInfoData.orgName}} | {{data.commonData.organizationInfoData.slogan}}</title>
+{{/pagetitle}}
+
+{{#pagetitle 'pagestylesheets'}}
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+{{/pagetitle}}
+
+
+
+
+
+<style>
+
+.navbar-header .navbar-brand {
+    padding: 5px 0;
+    margin-left: -80px;
+}
+
+@media screen and (max-width: 40.5em) {
+    
+.navbar-header .navbar-brand {
+  padding: 5px 0;
+      margin-left: -15px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+
+   position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.bgimg-1 {
+        background-image: url(http://res.cloudinary.com/www-kadence-in/image/upload/v1511760551/Lets_music_aoikmd.jpg);
+    min-height: 667px;
+    /*min-width: : 225px;*/
+    background-color: #000;
+}
+
+.bgimg-2 {
+        background-image: url(http://res.cloudinary.com/www-kadence-in/image/upload/v1512389777/mobile_drummer_rep_vdfoer.jpg);
+    min-height: 667px;
+    /*min-width: : 375px;*/
+    background-color: #000;
+
+}
+.bgimg-3 {
+        background-image: url(http://res.cloudinary.com/www-kadence-in/image/upload/v1511772267/hm3p3_ehc0xp.jpg);
+    min-height: 667px;
+    background-color: #000;
+    /*min-width: 375px;*/
+}
+.bgimg-4 {
+        background-image: url(http://res.cloudinary.com/www-kadence-in/image/upload/v1511760776/HMPG4_vewj71.jpg);
+    min-height: 667px;
+    background-color: #000;
+    /*min-width:  375px;*/
+}
+
+
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 42.5%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+.caption1 div.border1 {
+
+     /*padding-right: 22%;*/
+    color: #fff;
+    /*padding: 18px;*/
+    font-size: 60px;
+    padding-left: 110px;
+    font-weight: bold;
+    letter-spacing: -1px
+
+}
+
+.caption12 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+        padding-left: 75px;
+}
+
+.caption12 div.border1 {
+    /*padding-right: 22%;*/
+    color: #fff;
+   padding-left: 0px;
+width: 30%;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -2px;
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.caption2 {
+position: absolute;
+    left: 0;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-left: 0px;
+}
+
+.caption2 div.border21 {
+
+ /*color: #fff;
+    padding-left: 0px;
+    font-size: 40px;
+    width: 80%;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-align: center;*/
+    margin-top: -105px;
+    padding-left: 0px;
+
+      margin-left: 25px;
+        color: #fff;
+    width: 60%;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.border22 {
+     position: absolute;
+    left: 0;
+    width: 80%;
+    color: #f7f7f7;
+    margin-right: 0px;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: -80px;
+}
+
+.border23 {
+    background-color: transparent;
+    font-size: 13px;
+    color: #f7f7f7;
+    margin-left: 32%;
+    margin-top: -60px;
+    margin-left: 0;
+    padding-left: 32.5%;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+.caption3 {
+position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    /*padding-left: 0px;*/
+    padding: 0;
+}
+
+
+.caption3 div.border31 {
+color: #fff;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+.border32 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #f7f7f7;
+    padding-right: 0px;
+    font-size: 15px;
+    padding-left: 28%;
+    margin-top: 0px;
+}
+
+.border33 {
+    background-color: transparent;
+    font-size: 15px;
+    color: #f7f7f7;
+    margin-top: -50px;
+    /* padding-left: 67%; */
+    text-align: right;
+    float: right;
+    padding-right: 20px;
+    width: 100%;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.caption4 {
+position: absolute;
+    left: 0;
+    /*top: 70%;*/
+    width: 100%;
+    /*text-align: center;*/
+    color: #000;
+    padding: 0px;
+}
+
+.caption4 div.border41 {
+    font-weight: bold;
+    letter-spacing: -3px;
+    background-color: transparent;
+    color: #f7f7f7;
+    text-align: left;
+    font-size: 40px;
+    font-family: FuturaStdBold;
+    font-style: italic;
+    padding: 0 0 0 40px
+}
+
+
+.border42 {
+    position: absolute;
+    /* left: 0; */
+    width: 80%;
+    text-align: center;
+    color: #f7f7f7;
+    padding-right: 0px;
+    font-size: 15px;
+    /* padding-left: 2%; */
+    margin-top: -10px;
+    margin-left: 20%;
+}
+
+.border43 {
+    background-color: transparent;
+    font-size: 12px;
+    color: #f7f7f7;
+    margin-top: 5px;
+    padding-left: 62%;
+    padding-top: 4px;
+}
+
+.collapse-main-menu {
+  text-align: center;
+  display: block;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*.caption4 {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+        padding-left: 66px;
+}
+
+.caption4 span.border1 {
+    color: #fff;
+        padding-left: 0px;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: -3px
+
+}
+
+
+.caption14 {
+
+        position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-right: 0px;
+
+}
+
+.caption14 span.border1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: -3px
+
+}
+.border12 {
+        padding-left: 0px;
+    font-style: italic;
+    margin-top: -70px;
+    background-color: transparent;
+    color: #f7f7f7;
+    font-size: 20px;
+}
+
+.border13 {
+ background-color:transparent; 
+ font-size:20px; 
+ color: #f7f7f7; 
+ padding-left: 14%;
+}
+
+
+}*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+    
+.navbar-header .navbar-brand {
+  padding: 5px 0;
+      margin-left: -15px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+
+   position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.bgimg-1 {
+        /*background-image: url(http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1505452315/home1_kchcuc.png);*/
+    min-height: 667px;
+    min-width: : 225px;
+}
+
+.bgimg-2 {
+        /*background-image: url(http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1505452700/home2mobile_twausq.png);*/
+    min-height: 667px;
+    min-width: : 375px;
+}
+.bgimg-3 {
+        /*background-image: url(http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1505452989/home3mobile_lzqjgr.png);*/
+    min-height: 667px;
+    min-width: : 375px;
+}
+.bgimg-4 {
+        /*background-image: url(http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1505452989/home4mobile_gdftm4.png);*/
+    min-height: 667px;
+    min-width: : 375px;
+}
+
+
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-left: 106px;
+}
+
+.caption1 div.border1 {
+
+     /*padding-right: 22%;*/
+    color: #fff;
+    padding: 18px;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -3px
+
+}
+
+.caption12 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+        padding-left: 33px;
+}
+
+.caption12 div.border1 {
+    padding-right: 22%;
+    color: #fff;
+    padding: 18px;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -3px;
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.caption2 {
+position: absolute;
+    left: 0;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-left: 0px;
+}
+
+.caption2 span.border21 {
+
+  color: #fff;
+    padding: 18px;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+.border22 {
+     position: absolute;
+    left: 0;
+    width: 100%;
+    color: #f7f7f7;
+    padding-right: 0px;
+    font-size: 20px;
+    padding-left: 25%;
+    margin-top: -70px;
+}
+
+.border23 {
+ background-color:transparent; 
+ font-size: 15px; 
+ color: #f7f7f7; 
+ padding-left: 32%;
+    margin-top: -45px;
+    padding-left: 47%
+
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+.caption3 {
+position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding-left: 0px;
+}
+
+
+.caption3 span.border31 {
+color: #fff;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+.border31 {
+position: absolute;
+    left: 0;
+    width: 100%;
+    color: #f7f7f7;
+    padding-right: 0px;
+    font-size: 15px;
+    padding-left: 25%;
+    margin-top: -70px;
+}
+
+.border32 {
+  background-color:transparent; 
+ font-size: 15px; 
+ color: #f7f7f7; 
+    margin-top: -50px;
+    padding-left: 67%
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.caption4 {
+position: absolute;
+    left: 0;
+    /*top: 70%;*/
+    width: 100%;
+    /*text-align: center;*/
+    color: #000;
+    padding-left: 20px;
+}
+
+.caption4 span.border41{
+  color: #fff;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    /*text-align: center;*/
+    margin-top: 0px;
+}
+
+
+.border42 {
+
+ position: absolute;
+    left: 0;
+    width: 100%;
+    color: #f7f7f7;
+    padding-right: 0px;
+    font-size: 18px;
+    padding-left: 25%;
+    margin-top: -15px;
+
+}
+
+.border43 {
+
+  background-color:transparent; 
+ font-size: 15px; 
+ color: #f7f7f7; 
+    margin-top: 5px;
+        padding-left: 57%
+}
+
+.collapse-main-menu {
+  text-align: center;
+  display: block;
+}
+
+}
+
+
+</style>
+
+<script >
+$(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+</script>
+
+<div>
+
+
+
+
+
+
+<header id="top-bar" class="navbar-fixed-top animated-header">
+     <div class="container">
+        <div class="navbar-header" style="padding-left: 25px;">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+<div class="navbar-brand">
+            <a href="/">
+                <img src="http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1504793954/organizationlogowhite_ow7t1a.png"
+                     alt="organizationlogo">
+            </a>
+        </div>
+            {{!-- {{>shared/header/header-logo orgInfo=orgInfo}} --}}
+        </div>
+
+
+
+
+
+
+<nav class="collapse navbar-collapse navbar-right" role="navigation">
+    <div class="collapse-main-menu">
+        <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/" style="font-size: 18px; font-weight: bold;">Home</a>
+                </li>
+
+                <li>
+                    <a href="/products">Products</a>
+                </li>
+
+                <li>
+                    <a href="/store">Stores</a>
+                </li>
+
+                <li>
+                    <a href="/blogs">Blogs</a>
+                </li>
+
+                <li>
+                    <a href="/about-us">About us</a>
+                </li>
+                 <li>
+                    <a href="/testimonial">Testimonials</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <nav  class="site-nav js-site-nav -in-v"  style="height:0">
+            <div class="main-menu">
+                <ul class="site-nav__list js-site-nav-list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/" style="font-size: 18px; font-weight: bold;" >Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/products">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/store">Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/news">News/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/blogs">Blogs&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/about-us">About us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+
+                        {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/testimonial" >Testimonials&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/contact">Contact us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="bgimg-1">
+  <div  class="caption1" style="font-family: FuturaStdBold;">
+    <div data-wow-duration="2500ms"  class="border1 wow fadeInLeft">LET'S</div>
+  </div></br>
+  <div  class="caption12" style=" font-family: FuturaStdBold;">
+      <div  data-wow-duration="2500ms" class="border1 wow fadeInRight">MUSIC</div>
+  </div>
+</div>
+
+
+
+
+<div class="bgimg-2">
+  <div class="caption2">
+    <div data-wow-duration="2500ms"  class="border21  wow fadeInDown" >Without music,</div>
+    <div data-wow-duration="2500ms"  class="border22 wow fadeInLeft">life would be a mistake. 
+    </div>
+    <div data-wow-duration="2500ms"  class=" border23 wow fadeInUp" >-Friedrich Nietzsche
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="bgimg-3">
+  <div   class="caption3 ">
+    <div data-wow-duration="2500ms" class="border31  wow fadeInDown ">One good thing about music,
+    </div>
+
+    <div data-wow-duration="2500ms"  class="border32 wow fadeInLeft">when it hits you, you feel no pain</div>
+
+    <div data-wow-duration="2500ms"  class="border33 wow fadeInUp">-Bob Marley</div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="bgimg-4">
+  <div  class="caption4 " >
+    <div data-wow-duration="2500ms"  class="border41 wow fadeInUp" >Music is 
+    </div>
+
+   <div data-wow-duration="2500ms"  class="border42 wow fadeInLeft"> the strongest form of magic.</div>
+
+   <div data-wow-duration="2500ms"   class="border43 wow fadeInDown">-Marilyn Manson</div>
+
+  </div>
+</div>
+
+
+</div>
+
+{{#pagetitle 'pagescripts'}}
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/index-page-script.js"></script>
+{{/pagetitle}}
+
+{{>shared/footer/footer}}

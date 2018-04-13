@@ -1,0 +1,71 @@
+
+<div class="row" style="    padding-top: 16px;">
+<div class="col-md-5" style="    width: 90.66666667%;">
+    <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+        <i class="ion-ios-location-outline"></i>
+        <h5 style="color:#fff; text-align: left; margin-left: 40px; padding: 0px;     margin-top: -39px;">
+            {{#if orgInfo.streetAddress}}
+                {{orgInfo.streetAddress}}
+            {{/if}}
+            {{#if orgInfo.city}}
+                , {{orgInfo.city}}
+            {{/if}}
+            {{#if orgInfo.state}}
+                , {{orgInfo.state}}
+            {{/if}}
+            {{#if orgInfo.country}}
+                , {{orgInfo.country}}
+            {{/if}}
+
+        </h5>
+    </div>
+
+
+<div style="    margin-top: -9px;">
+    <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s" st>
+        <i class="ion-ios-telephone-outline"></i>
+            <h5 style="color:#fff; text-align: left; margin-left: 40px; padding: 0px;   margin-top: -33px;">Tel : {{orgInfo.phoneNumber}},{{#if orgInfo.faxNumber}}&nbsp;&nbsp;
+        Fax: {{orgInfo.faxNumber}} {{/if}}&nbsp;&nbsp;Mobile : {{orgInfo.mobileNumber}}</h5>
+    </div>
+</div>
+
+
+
+
+<div style="    margin-top: -5px;">
+    <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+        <i class="ion-ios-email-outline"></i>
+         <h5 style="color:#fff;  text-align: left; margin-left: 40px;  padding: 0px;  margin-top: -32px;">{{orgInfo.organizationEmail}}</h5>
+        {{!-- <h4></h4> --}}
+
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+{{!-- <div class="row">
+    <div class="col-md-6">
+    <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+        <i class="ion-ios-email-outline"></i>
+         <h5 style="color:#333">{{orgInfo.organizationEmail}}</h5>
+        
+
+    </div>
+</div>
+
+<div class="col-md-5">
+    <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+        <i class="ion-ios-telephone-outline"></i>
+            <h5 style="color:#333">Postal Address: {{orgInfo.postalCode}}</h5>
+    </div>
+</div>
+<div class="col-md-2">
+    </div>
+</div> --}}

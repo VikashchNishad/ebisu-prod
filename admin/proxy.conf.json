@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://139.59.23.112:3000",
+    "secure": false
+  },
+  "/data": {
+    "target": "http://139.59.23.112:3000",
+    "secure": false
+  }
+}

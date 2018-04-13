@@ -1,0 +1,2106 @@
+{{#pagetitle 'page'}}
+    <title>Products | {{data.commonData.organizationInfoData.orgName}}</title>
+{{/pagetitle}}
+
+{{>shared/global-header headerTitle=activePageMenu}}
+
+<style>
+#footer .col-md-2 {
+  width: 12.66666667%;
+      padding: 0;
+}
+
+#footer ul {
+    padding-left: 0;
+
+}
+
+#footer .container-fluid {
+        /*padding-right: 50px;*/
+    padding-left: 65px;
+}
+
+#footer .col-md-2 .ul {
+ margin-top: 8px;    margin-left: 20px;
+}
+
+#footer .col-md-2 ul li {
+    margin-top: -4px;
+}
+
+#footer .col-md-2 ul li a {
+ font-size: 12px;
+}
+
+#footer .col-md-4 {
+
+/*margin-left: 175px;*/
+width: 56%;
+}
+
+#footer .container{
+margin-left: 30px;
+
+}
+.footerBtn {
+ font-size: 15px;
+    letter-spacing: 1px;
+    padding: 3px;   width: 110px; background-color: #555;
+    color: #fff;
+    border-radius: 0;
+}
+
+
+.searchList{
+margin-top: 10px;     width: 450px;
+    margin-bottom: 10px;
+
+}
+
+
+.socialList {
+margin-top: 25px;     margin-left: 70px;
+}
+
+.socialList p {
+ font-size: 10px;
+    padding-left: 180px;
+    padding-bottom: 5px; 
+}
+
+#footer  .col-md-6 {
+width:108%; margin-left: 20px;
+}
+
+
+#footer .copyright span{
+    padding-right: 75px; float: right;
+}
+
+.input-group {
+
+   /*padding-left: 250px;*/
+}
+
+.follow {
+    margin-top: 12px;
+}
+
+.follow p {
+    padding-left: 150px;
+    font-size: 12px;
+}
+
+
+
+.Facebook { padding-right: 10px; }
+
+.Twitter { padding-right: 3px; }
+
+.Linkedin { padding-right: 6px; }
+
+.Google { padding-right: 3px; }
+
+
+#footer .logo{
+    display: inline;
+    padding-left: 0;
+}
+
+ .img{
+    width: 100px;
+}
+
+.colMd3-1 {
+  width: 25%;
+}
+.colMdMobile3-1{
+  width: 25%;
+}
+.colMd3-2 {
+  width: 35.666667%;
+}
+/*----------------------------------@media screen Start----------------------------------------------------------------*/
+
+@media screen and (max-width: 40.5em) {
+
+
+#footer .container-fluid {
+padding-left: 0px; 
+
+}
+
+
+#footer .col-md-2 {
+width: 30%;
+padding: 15px 0 0 0;
+margin: 0;
+    float: right;
+}
+
+#footer .col-md-2 ul {
+ margin-top: 0px;    margin-left: 0px;
+}
+
+#footer .col-md-2 ul li {
+    margin-top: -6px;
+}
+
+#footer .col-md-2 ul li a {
+ font-size: 10px;
+}
+
+#footer .col-md-4 {
+
+margin-left: 0px;
+width: 100%;
+margin-top: 80px;
+
+}
+
+.searchList{
+
+    margin-top: 100px;
+    width: 300px;
+    margin-bottom: 10px;
+
+}
+
+
+.footerBtn {
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 3px;
+    width: 60px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 0;
+}
+.input-sm {
+    height: 24px;
+    padding: 5px 10px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+
+.socialList {
+margin-top: 15px;     
+margin-left: 20px;
+}
+
+.socialList p {
+ font-size: 10px;
+       padding: 0px;
+        margin-top: -3px;
+
+}
+
+#footer .social {
+    margin-top: -30px;
+    padding-left: 70px;
+
+}
+
+
+.col-md-6 {
+width:108%; margin-left: 0px;
+}
+
+
+#footer .copyright {
+    text-align: left;
+      font-size: 10px;
+
+    padding-left: 35px;
+    margin-top: 0;
+}
+#footer .copyright span {
+        padding-right: 0px;
+    float: right;
+}
+
+.input-group {
+
+   padding-left: 20px;
+}
+
+
+
+.follow {
+    margin-top: 12px;
+}
+
+.follow p {
+    padding-left: 0px;
+    font-size: 10px;
+    padding-left: 50px;
+}
+
+
+
+.Facebook { padding-right: 0px; }
+
+.Twitter { padding-right: 0px; }
+
+.Linkedin { padding-right: 0px; }
+
+.Google { padding-right: 0px; }
+
+#footer .logo{
+  padding-left: 40px;
+}
+
+.img{
+    width: 100px;
+}
+
+.colMd3-1 {
+  width: 100%;
+  margin-top: 820px;
+}
+.colMdMobile3-1{
+  width: 100%;
+}
+.colMd3-2 {
+  width: 100%;
+}
+}
+/*---------------------footer end--------------------------------*/
+.scrollbar
+{
+  height: 620px;
+  background: #fff;
+  overflow-y: scroll;
+  background-color: transparent;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 400px;
+}
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  background-color: #555;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 0px;
+  background-color: #FFFFFF;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  background-color: #333;
+  background-image: -webkit-linear-gradient(90deg,
+                                            rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 25%,
+                        transparent 100%,
+                        rgba(0, 0, 0, 0) 75%,
+                        transparent)
+}
+
+
+/*.force-overflow {
+
+color: #fff;
+ text-align: center ; 
+margin-top: -10px; 
+padding-bottom: 2px;
+}*/
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%}.w3-col.s4{width:33.33333%}
+.w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
+.w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
+@media (min-width:601px){.w3-col.m1{width:8.33333%}.w3-col.m2{width:16.66666%}.w3-col.m3,.w3-quarter{width:24.99999%}.w3-col.m4,.w3-third{width:33.33333%}
+.w3-col.m5{width:41.66666%}.w3-col.m6,.w3-half{width:49.99999%}.w3-col.m7{width:58.33333%}.w3-col.m8,.w3-twothird{width:66.66666%}
+.w3-col.m9,.w3-threequarter{width:74.99999%}.w3-col.m10{width:83.33333%}.w3-col.m11{width:91.66666%}.w3-col.m12{width:99.99999%}}
+@media (min-width:993px){.w3-col.l1{width:8.33333%}.w3-col.l2{width:16.66666%}.w3-col.l3{width:24.99999%}.w3-col.l4{width:33.33333%}
+.w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
+.w3-col.l9{width:74.99999%}.w3-col.l10{width:83.33333%}.w3-col.l11{width:91.66666%}.w3-col.l12{width:99.99999%}}
+.w3-content{max-width:980px;margin:auto}.w3-rest{overflow:hidden}
+.w3-cell-row{display:table;width:100%}.w3-cell{display:table-cell}
+.w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
+.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
+
+
+.bounce {
+    position:relative;
+    left:50%;
+    bottom:0;
+        /*margin-top: 80px;*/
+    margin-left:-25px;
+    height:50px;
+    width:50px;
+        cursor: pointer;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+    
+  }
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+
+.w3customclass {
+ width: 88%;
+background-color:#000;
+height: 100%; 
+min-height: 770px;
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+
+.productTop {
+position: relative; background-repeat: no-repeat; background-size: cover; min-height: 770px;
+}
+
+
+.productSubTop {
+  position: relative; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
+  min-height: 770px;
+}
+
+.readModuleTitle {
+  text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-family: FuturaStdBold;
+    font-size:25px;
+    width:100%;
+}
+
+#myCarousel {
+  width:180%;
+}
+
+
+
+.readModuleDescription {
+ font-weight:bold;
+ font-style:italic;
+ font-family: FuturaStdBold;
+  width:100%;
+  text-align:left;
+  color:#000;
+}
+
+.readModuleSpecification {
+  font-weight:bold;
+ font-style:italic;
+ font-family: FuturaStdBold;
+  width:100%;
+  text-align:left;
+  color:#000;
+}
+
+
+
+
+
+
+#productsubdescription {
+position: absolute;
+    left: 0;
+    top:40%;
+    width: 100%;
+    text-align: left;
+    color: #000;
+}
+
+.productsubdescriptionTitle {
+  width: 77%; 
+  text-align: center;
+}
+
+#productsubdescription span {
+  padding-left: 30%; 
+  padding-bottom: 0px; 
+  background-color:transparent;
+  color: #f7f7f7;  
+  font-size: 40px;
+  font-family: FuturaStdBold; 
+  font-style: italic; 
+}
+
+.productsubdescriptionSummary{
+  padding-left: 20%;
+  width: 80%; 
+  font-style: italic; 
+  text-align: center; 
+  margin-top: -20px; 
+  background-color:transparent; 
+  font-size:25px; 
+  color: #f7f7f7;
+}
+
+#productsubdescription p {
+ font-size: 12px;  
+ margin-top: -14px;
+}
+
+.modal { 
+    position: fixed; 
+    top: 3%; 
+    right: 3%; 
+    left: 3%; 
+    width: auto; 
+    margin: 0; 
+}
+.modal-body { 
+    height: 60%;
+    width:60%; 
+}
+and in bootstrap.css
+
+.modal-body { 
+    max-height: 350px; 
+    padding: 15px; 
+    overflow-y: auto; 
+
+    -webkit-overflow-scrolling: touch; 
+ }
+
+ .btn {
+    display: inline-block;
+
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Century Gothic';
+    font-style: italic;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#bottom {
+  height:770px; 
+  margin: 0px;
+  padding-top: 50px;
+
+}
+
+#bottom img{
+ /*position: absolute;*/
+ right: 0px; 
+ /*max-width: 100%; 
+ height: 600px;*/
+}
+
+#bottom .col-xs-6{
+  width: 55%; 
+    /*margin-top: 200px;*/
+     padding:0px;
+}
+
+
+.productVariants {
+ margin-top:0px; 
+ margin-left: 20px;
+}
+
+.productVariants h4 {
+  text-align: left; 
+  font-style: italic; 
+  font-weight: bold;
+}
+
+.productVariantList {
+  border-left: solid 2px #fff;
+  color:#fff; 
+  margin-top: -5px;
+}
+
+
+.sizeController {
+  margin-right: 80px;
+  /*margin-top: -120px;*/
+}
+.sizeController h4 {
+  padding-right: 5px;
+}
+.sizeController hr {
+          margin: 0px -2px 0px 0px;
+    color: #BDBDBD;
+    background-color: #BDBDBD;
+    width: 42%;
+    float: right;
+}
+
+.sizeController label {
+      width: 25px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 3px;
+    height: 25px;
+    font-size: 10px;
+    /*font-style: italic;*/
+    /*margin-top: -3px;*/
+}
+
+.sizeController a {
+  padding-top: 0px;
+    font-size: 13px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    /* font-style: normal; */
+    padding-left: 4px;
+}
+
+.sizeController a:hover{
+  padding-top: 0px;
+    font-size: 13px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    /* font-style: normal; */
+    padding-left: 4px;
+}
+
+.colorController {
+      float: right;
+    margin-top: 130px;
+    width: 35%;
+    margin-right: 50px;
+}
+
+.colorController hr {
+  margin: 0px 0px 6px 0px;
+    color: #BDBDBD;
+    background-color: #BDBDBD;
+    height: 1px;
+}
+
+.colorController label {
+  width:25px;
+}
+
+
+.navAnimation {
+    -webkit-transition: right 2s; /* For Safari 3.1 to 6.0 */
+    transition: right 2s;
+}
+
+
+.active {
+  /*background : red;*/
+  /*color: yellow;*/
+      font-weight: 900;
+
+}
+
+.activeSize {
+  /*background : red;*/
+  /*color: yellow;*/
+      font-weight: 900;
+
+}
+
+
+.loading {height: 100%; width:100%; padding-top: 150px;}
+.imgloader { margin-left: 600px; }
+
+.dis_list {
+  padding-left: 5px;
+      margin-top: -10px;
+
+}
+.dis_list p {
+        padding: 0px;
+ color: #fff;
+ margin: 0px;
+ font-size: 13px;
+
+}
+
+.contentPost { display:none;}
+
+
+.item-photo{display:flex;/*justify-content:center;align-items:center;*/ width: 26%; /*margin-top: 135px;*/}
+.title-attr{margin-bottom:0;color: #fff;text-align: right; font-style: italic;  font-size: 19px; font-weight: bold;}
+.title-attr1{margin-bottom:0;color: #fff;text-align: right; font-style: italic;  font-size: 19px; font-weight: bold;}
+
+.attr,.attr2{float: right; cursor: pointer; margin-right:5px; height:25px; font-size:10px; padding:2px; border:1px solid #fff;border-radius: 100%;  }
+.attr.active,.attr2.active{ border:1px solid orange;}
+
+/*@media (max-width: 426px) {
+    .container {margin-top:0px !important;}
+    .container > .row{padding:0 !important;}
+    .container > .row > .col-xs-12.col-sm-5{
+        padding-right:0 ;    
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > p{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > ul{
+        padding-left:10px !important;
+        
+    }            
+    .section{width:104%;}
+    .menu-items{padding-left:0;}
+}*/
+
+.displayMobileNot {
+  display: block;
+}
+.displayMobile {
+  display: none;
+}
+
+/*-----------------------------------------Mobile Css----------------------------------------------------*/
+
+@media screen and (max-width: 40.5em) {
+
+.productTop {
+position: relative; background-repeat: no-repeat; background-size: 100% 100%; min-height: 770px;
+}
+
+.productSubTop {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 770px;
+}
+
+.navAnimation {
+  display: none;
+}
+
+.contentPost{
+  display: none;
+  
+}
+
+.displayMobileNot {
+  display: none;
+}
+.displayMobile {
+  display: block;
+}
+
+.collapse-main-menu {
+  text-align: center;
+  display: block;
+}
+
+.productsubdescriptionTitle {
+    width: 100%;
+    text-align: center;
+}
+
+#productsubdescription {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#productsubdescription span {
+    padding-right: 90px;
+    padding-bottom: 0px;
+    background-color: transparent;
+    color: #f7f7f7;
+    font-size: 30px;
+    font-family: FuturaStdBold;
+    font-style: italic;
+}
+#productsubdescription p {
+    font-size: 10px;
+    margin-top: -14px;
+}
+.productsubdescriptionSummary {
+    padding: 0 5%;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    margin-top: -20px;
+    background-color: transparent;
+    font-size: 25px;
+    color: #f7f7f7;
+}
+
+.item-photo {
+    display: flex;
+     width: 100%; 
+    /* margin-top: 135px; */
+}
+
+#mobileBottom {
+  height:770px; 
+  margin: 0px;
+  padding-top: 50px;
+
+}
+
+#mobileBottom img{
+ position: absolute;
+ /*right: 0px; */
+ /*max-width: 100%; 
+ height: 600px;*/
+}
+
+#mobileBottom .col-xs-6{
+  width: 55%; 
+    /*margin-top: 200px;*/
+     padding:0px;
+}
+.productVariants {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.sizeController {
+    margin: 0px;
+}
+.colorController {
+    float: right;
+    margin: 0px;
+    width: 60%;
+}
+.title-attr {
+    margin-bottom: 0;
+    color: #fff;
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title-attr1 {
+    margin-bottom: 0;
+    color: #fff;
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.productVariants h4 {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+}
+
+
+</style>
+
+
+<!-- .................................................scripts........................................................... -->
+
+<script >
+$(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+</script>
+
+<script >$(document).ready(function() {
+    $(".contentPost").delay(600).fadeIn(500);
+});</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<script>
+  var $scope, $location;
+  var app = angular.module('myApp', []);
+  app.config(function($interpolateProvider) {
+      $interpolateProvider.startSymbol('{[{');
+      $interpolateProvider.endSymbol('}]}');
+  });
+
+  app.directive('loading', function () {
+        return {
+          restrict: 'E',
+          replace:true,
+          template: '<div class="loading"><img class="imgloader" src="/uploads/images/balls-spinner.gif" width="80" height="80" /></div>',
+          link: function (scope, element, attr) {
+                scope.$watch('loading', function (val) {
+                    if (val)
+                        $(element).show();
+                    else
+                        $(element).hide();
+                });
+          }
+        }
+    })
+
+  app.service('anchorSmoothScroll', function(){
+    
+    this.scrollTo = function(eID) {
+      // This scrolling function 
+      // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
+      var startY = currentYPosition();
+      var stopY = elmYPosition(eID);
+      var distance = stopY > startY ? stopY - startY : startY - stopY;
+      if (distance < 100) {
+          scrollTo(0, stopY); return;
+      }
+      var speed = Math.round(distance / 100);
+      if (speed >= 20) speed = 20;
+      var step = Math.round(distance / 25);
+      var leapY = stopY > startY ? startY + step : startY - step;
+      var timer = 0;
+      if (stopY > startY) {
+          for ( var i=startY; i<stopY; i+=step ) {
+              setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+              leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+          } return;
+      }
+      for ( var i=startY; i>stopY; i-=step ) {
+          setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+          leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+      }
+      function currentYPosition() {
+          // Firefox, Chrome, Opera, Safari
+          if (self.pageYOffset) return self.pageYOffset;
+          // Internet Explorer 6 - standards mode
+          if (document.documentElement && document.documentElement.scrollTop)
+              return document.documentElement.scrollTop;
+          // Internet Explorer 6, 7 and 8
+          if (document.body.scrollTop) return document.body.scrollTop;
+          return 0;
+      }
+      
+      function elmYPosition(eID) {
+          var elm = document.getElementById(eID);
+          var y = elm.offsetTop;
+          var node = elm;
+          while (node.offsetParent && node.offsetParent != document.body) {
+              node = node.offsetParent;
+              y += node.offsetTop;
+          } return y;
+      }
+
+    };
+    
+  });
+
+  app.controller('myCtrl', function($scope, $http, $location, anchorSmoothScroll) {
+    $scope.KeyVariant = "";
+    
+    $scope.setActive = function(menuItem) {
+      $scope.activeMenu = menuItem;
+    };
+
+    $scope.setActiveSize = function(Size) {
+      $scope.activeMenuSize = Size;
+    };
+
+    $scope.loadingHr = false;
+
+    $scope.gotoElement = function (eID){
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('bottom');
+      // call $anchorScroll()
+      anchorSmoothScroll.scrollTo(eID);
+    };
+
+    $scope.gotoMobileElement = function (eID){
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('mobileBottom');
+      // call $anchorScroll()
+      anchorSmoothScroll.scrollTo(eID);
+    };
+
+     // $scope.domain = "http://139.59.37.234:80/api/";
+    // :3000 
+    $scope.domain = "http://"+ window.location.host + "/api/";
+    //$scope.domain = "http://kadence.in/api/";
+
+    $scope.sizem = "fadeInRight";
+    $scope.sizeimg = "fadeInRight";
+
+    $http.get($scope.domain +"cloudinaryname/cloudinaryName")
+      .then(function(response) {
+          $scope.cloudinaryname = response.data;
+          // console.log($scope.cloudinaryname.cloudinaryCloudName);
+    });
+
+    $http.get($scope.domain +"productscategory/")
+      .then(function(response) {
+        $scope.menu = response.data;
+    });
+
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Guitars Basses")
+      .then(function(response) {
+        $scope.guitarsproducts = response.data.dataList;
+    });
+    
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Ukulele")
+      .then(function(response) {
+        $scope.ukuleleproducts = response.data.dataList;
+    });    
+    
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Drums percussion")
+      .then(function(response) {
+        $scope.drumsproducts = response.data.dataList;
+    });
+
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Digital")
+      .then(function(response) {
+        $scope.digitalproducts = response.data.dataList;
+    });
+
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:accessories")
+      .then(function(response) {
+        $scope.accessoriesproducts = response.data.dataList;
+    });
+
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Wind Instruments")
+      .then(function(response) {
+        $scope.windInstruments = response.data.dataList;
+    });
+
+    $http.get($scope.domain +"filtersubcategory/productscategorymy/:Amplifiers ")
+      .then(function(response) {
+        $scope.amplifiers  = response.data.dataList;
+    });
+    
+    $scope.showif = true;
+    $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1511955922/TG_nwwbzz.jpg";
+    $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514285609/Guitar_and_Basses_zkfiye.jpg";
+      
+      $scope.category = "";
+      $scope.rightpad = "151px";
+      $scope.rightpadsub = "-15px";
+      $scope.divwidth    = "88%"
+      
+      $scope.backcolor = "#111";
+      $scope.show = false;
+      $scope.marginTop = "0px"
+      
+      $scope.shownav = true;
+      $scope.notclicked = true;
+      $scope.clickedsub = true;
+
+      $scope.sizeWeight = function() {
+        $scope.size1 = "13px";
+        $scope.size2 = "13px";
+        $scope.size3 = "13px";
+        $scope.size4 = "13px";
+        $scope.size5 = "13px";
+        $scope.size6 = "13px";
+        $scope.size7 = "13px";
+        $scope.size8 = "13px";
+
+        
+
+        $scope.weight1 = "normal";
+        $scope.weight2 = "normal";
+        $scope.weight3 = "normal";
+        $scope.weight4 = "normal";
+        $scope.weight5 = "normal";
+        $scope.weight6 = "normal";
+        $scope.weight7 = "normal";
+        $scope.weight8 = "normal";
+
+        
+      }
+
+      $scope.size1 = "15px";
+      $scope.size2 = "13px";
+      $scope.size3 = "13px";
+      $scope.size4 = "13px";
+      $scope.size5 = "13px";
+      $scope.size6 = "13px";
+      $scope.size7 = "13px";
+      $scope.size8 = "13px";
+
+    
+
+      $scope.weight1 = "bold";
+      $scope.weight2 = "normal";
+      $scope.weight3 = "normal";
+      $scope.weight4 = "normal";
+      $scope.weight5 = "normal";
+      $scope.weight6 = "normal";
+      $scope.weight7 = "normal";
+      $scope.weight8 = "normal";
+
+      
+
+      $scope.selectedImg ="";
+      $scope.variants = "";
+      $scope.selectedValue = {id: 0};
+      $scope.selectedSizeValue = {id: 0};
+
+      $scope.prod = function() {
+        if( $scope.notclicked) {
+          $scope.rightpad = "-10px";
+          $scope.rightpadsub = "-200px";
+          $scope.divwidth = "100%"
+          $scope.shownav = false;
+          $scope.backcolor = "#000";
+          $scope.notclicked = false;
+        } else {
+            $scope.rightpad = "151px";
+            $scope.rightpadsub = "-15px";
+            $scope.shownav = true;
+            $scope.backcolor = "#111";
+            $scope.notclicked = true;
+            $scope.sizem = "fadeInRight";
+            $scope.divwidth = "88%"
+        }
+        
+        $(document).ready(function() {
+            $(".contentPost").delay(600).fadeIn(500);
+        });
+      }
+
+      $scope.onesub1 = function(product, category) {
+        if($scope.clickedsub){
+          $scope.sizem = "fadeInLeft";
+          $scope.clickedsub = false;
+        } else {
+            $scope.sizem = "fadeInRight";
+            $scope.clickedsub = true;
+        }
+        $scope.showif = false;
+
+        if(category == 'Guitars & Basses!') {
+            $scope.sizeWeight();
+            $scope.size1 = "15px";
+            $scope.weight1 = "bold";
+
+          } else if(category == 'Drums & percussion') {
+            $scope.sizeWeight();
+            $scope.size2 = "15px";
+            $scope.weight2 = "bold";
+
+          } else if(category == 'Digital') {
+            $scope.sizeWeight();
+            $scope.size3 = "15px";
+            $scope.weight3 = "bold";
+
+          } else if(category == 'Accessories') {
+            $scope.sizeWeight();
+            $scope.size4 = "15px";
+            $scope.weight4 = "bold";
+
+          } else if(category == 'Ukulele') {
+            $scope.sizeWeight();
+            $scope.size5 = "15px";
+            $scope.weight5 = "bold";
+
+          } else if(category == 'Wind Instruments') {
+            $scope.sizeWeight();
+            $scope.size6 = "15px";
+            $scope.weight6 = "bold";
+
+          } else if(category == 'Amplifiers') {
+            $scope.sizeWeight();
+            $scope.size7 = "15px";
+            $scope.weight7 = "bold";
+
+          } else if(category == 'Hand Pan') {
+            $scope.sizeWeight();
+            $scope.size8 = "15px";
+            $scope.weight8 = "bold";
+
+          }
+
+          $scope.show = true;
+          $scope.marginTop = "1500px"
+          $scope.loading = true;
+
+          $http.get($scope.domain +"filter/productssubcategory/:" + product)
+            .then(function(response) {
+              $scope.myData1 = response.data.dataList;
+              $scope.selectedValue.id = $scope.myData1[0].variants[0].color;
+              $scope.variants = $scope.myData1[0].variants[0];  
+              $scope.KeyVariant = $scope.variants.KeyVariant;
+              // $scope.selectedImg = $scope.myData1[0].variants[0].ImageURL;  
+              //  $scope.prodsize = $scope.myData1[0].variants[0].size;
+              $scope.size = true;   
+              $scope.prodVariantsSize = [];
+              $scope.prodVariants = [];
+             //   for( var i = 0, j = 0; i<$scope.myData1[0].variants.length; i++){
+                   
+             //       if($scope.size == $scope.myData1[0].variants[i].size) {
+
+             //       } else {
+
+             // $scope.prodVariantsSize[j] = $scope.myData1[0].variants[i].size;
+             //      $scope.size = $scope.myData1[0].variants[i].size;
+             //     j++;
+
+             //       }
+
+             //   }
+              for( var i = 0, j = 0; i<$scope.myData1[0].variants.length; i++){
+                for( var k = 0; k<$scope.prodVariantsSize.length; k++){
+                  if($scope.prodVariantsSize[k] == $scope.myData1[0].variants[i].Value) {
+                    $scope.size = false;
+                    break;
+                  } else {
+                      $scope.size = true;
+                  }
+                }
+                if($scope.size) {
+                  $scope.prodVariantsSize[j] = $scope.myData1[0].variants[i].Value;
+                    $scope.size = false;
+                    j++;
+                } else {
+                    $scope.size = false;
+                }
+              }
+
+            $scope.selectedSizeValue.id = $scope.prodVariantsSize[0];
+            $scope.sizeChange($scope.prodVariantsSize[0]);
+            $scope.setActiveSize($scope.prodVariantsSize[0])        
+            $scope.image ="http://res.cloudinary.com/" + $scope.cloudinaryname.cloudinaryCloudName  + "/image/upload/"+ $scope.myData1[0].image[0].imageName;
+            $scope.mobileImage = $scope.myData1[0].productsMobileImage;
+            $scope.category = category;
+
+            $scope.loading = false;
+            $scope.loadingHr = true;
+          });
+      };
+
+      $scope.colorChange = function(v) {
+        $scope.variants = v;
+        // $scope.selectedImg =v.ImageURL;
+        $scope.selectedValue.id = v.color;
+        // $scope.prodsize = v.size;
+      };
+
+      $scope.sizeChange = function (v) {
+        $scope.prodVariants = [];
+        $scope.sizeChangedValue = v;
+        for( var i = 0, j = 0; i<$scope.myData1[0].variants.length; i++){
+          if($scope.sizeChangedValue == $scope.myData1[0].variants[i].Value) {
+              $scope.prodVariants[j] = $scope.myData1[0].variants[i];
+              j++;
+          } 
+        }       
+        $scope.colorChange($scope.prodVariants[0]);
+      }
+
+
+// ---------------------------------------------------On category click---------------------------------------------------//
+
+    $scope.one = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1511955922/TG_nwwbzz.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514285609/Guitar_and_Basses_zkfiye.jpg";
+      $scope.sizeWeight();
+      $scope.size1 = "15px";
+      $scope.weight1 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInRight";
+      $scope.category = ""; 
+    };
+
+    $scope.two = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1513065378/percussions_2_4k_qwpafo.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514286893/Percussions_eozwfz.jpg";
+      $scope.sizeWeight();
+      $scope.size2 = "15px";
+      $scope.weight2 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInLeft";
+      $scope.category = ""; 
+    };
+    
+    $scope.three = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1512471060/4k_Digital_xwfkfn.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514286621/digital_ahk4bt.jpg";
+      $scope.sizeWeight();
+      $scope.size3 = "15px";
+      $scope.weight3 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInDown";
+      $scope.category = ""; 
+    };
+
+    $scope.four = function() {
+      $scope.image ="http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1505239610/corey1_t5tfxp.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514286967/Accessories_rozla9.jpg";
+      $scope.sizeWeight();
+      $scope.size4 = "15px";
+      $scope.weight4 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInUp";
+      $scope.category = ""; 
+    };
+
+    $scope.five = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1512463859/4k_Ukulele_rf67fa.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514286622/ukulele_1_qgfded.jpg";
+      $scope.sizeWeight();
+      $scope.size5 = "15px";
+      $scope.weight5 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInLeft";
+      $scope.category = ""; 
+    };
+
+    $scope.six = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1512473808/4k_Amp_xl596k.jpg";
+       $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514285609/Platform_tbnixh.jpg";
+      $scope.sizeWeight();
+      $scope.size6 = "15px";
+      $scope.weight6 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInDown";
+      $scope.category = ""; 
+    };
+
+    $scope.seven = function() {
+      $scope.image ="http://res.cloudinary.com/www-kadence-in/image/upload/v1512472884/4K_amplifier_lvwx6j.jpg";
+      $scope.mobileImage ="http://res.cloudinary.com/www-kadence-in/image/upload/v1514285609/amplifiers_uo73nl.jpg";
+      $scope.sizeWeight();
+      $scope.size7 = "15px";
+      $scope.weight7 = "bold";
+
+      $scope.show = false;
+       $scope.marginTop = "0px"
+      $scope.showif = true;
+      $scope.sizeimg = "fadeInLeft";
+      $scope.category = ""; 
+    };
+   
+    // $http.get("http://139.59.37.234:3000/api/filter/productscategory/:guitars-basses")
+    //     .then(function(response) {
+    //         $scope.myData = response.data.dataList;
+    //     });
+});
+
+</script>
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  <header id="top-bar" class="navbar-fixed-top animated-header">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <!-- responsive nav button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- /responsive nav button -->
+        <div class="navbar-brand" style="padding-left: 25px;">
+          <a href="/">
+            <img  src="http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1504793954/organizationlogowhite_ow7t1a.png" alt="organizationlogo">
+          </a>
+        </div>
+      </div>
+
+
+  <!-- ....................................................Mobile Nav............................................................... -->
+
+      <nav class="collapse navbar-collapse navbar-right" role="navigation">
+        <div class="collapse-main-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/products" style="font-size: 18px; font-weight: bold;">Products</a>
+                <div>
+                  <div class="scrollbar contentPost" id="style-1" style="height:200px; background-color:#3c763d;">
+                    <ul data-wow-duration="1000ms" data-wow-delay=".8s" class="wow fadeInUp">
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                      <li data-wow-duration="1000ms" data-wow-delay=".8s" class="wow fadeInDown" style="padding: 0px  0px  0px 0px;">
+                        <a style=" line-height: 40px; font-size:{[{size1}]}; font-weight: {[{weight1}]}; cursor:pointer;" ng-click="setActive('null'); one()">Guitars & Basses</a>
+                        <ul style="margin-top:-15px;">
+                          <li  data-wow-duration="500ms" data-wow-delay=".8s"  ng-repeat="guitarsproduct in guitarsproducts" class="wow fadeInDown" style="margin-top: -7px;padding: 0px  0px  0px 0px;"  >
+                            <a ng-class="{active : activeMenu === guitarsproduct.subCategoryName}" style=" line-height: 1.5;font-size:10px; cursor:pointer;" ng-click=" setActive(guitarsproduct.subCategoryName); onesub1(guitarsproduct.subCategoryName, 'Guitars & Basses!'); gotoElement('top'); " ng-cloak>{[{guitarsproduct.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+  <!-- .....................................................product catagory............................................................... -->
+
+                      <li data-wow-duration="1000ms" data-wow-delay=".8s" class="wow fadeInDown" style="padding: 0px  0px  0px 0px;">
+                        <a style=" line-height: 40px; font-size:{[{size5}]}; font-weight: {[{weight5}]}; cursor:pointer;" ng-click="setActive('null'); five()">Ukuleles</a>
+                        <ul style="margin-top:-15px;">
+                          <li  data-wow-duration="500ms" data-wow-delay=".8s"  ng-repeat="ukuleleproduct in ukuleleproducts" class=" wow fadeInDown" style="margin-top: -7px;padding: 0px  0px  0px 0px;"  >
+                            <a ng-class="{active : activeMenu === ukuleleproduct.subCategoryName}" style=" line-height: 1.5;font-size:10px; cursor:pointer;" ng-click=" setActive(ukuleleproduct.subCategoryName); onesub1(ukuleleproduct.subCategoryName, 'Ukulele'); gotoElement('top'); " ng-cloak>{[{ukuleleproduct.subCategoryName}]}</a>
+                          </li>
+                        </ul>
+                      </li>
+  <!-- .....................................................product catagory............................................................... -->
+                      
+                      <li data-wow-duration="1000ms" data-wow-delay=".8s" class="wow fadeInDown" style="padding: 0px  0px  0px 0px;">
+                        <a style=" line-height:40px;font-size:{[{size2}]}; font-weight: {[{weight2}]}; cursor:pointer;"ng-click="setActive('null'); two()">Percussions</a>
+                        <ul style="margin-top:-15px;">
+                          <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="drumsproduct in drumsproducts" class="wow fadeInDown" style="margin-top: -7px; padding: 0px  0px  0px 0px;">
+                            <a ng-class="{active : activeMenu === drumsproduct.subCategoryName}" style=" line-height: 1.5; font-size:10px;  cursor:pointer;" ng-click="onesub1(drumsproduct.subCategoryName, 'Drums & percussion'); gotoElement('top'); setActive(drumsproduct.subCategoryName)" ng-cloak>{[{drumsproduct.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                      <li style="padding: 0px  0px  0px 0px;">
+                        <a ng-click="setActive('null'); three()" style="line-height:40px;font-size:{[{size3}]}; font-weight: {[{weight3}]}; cursor:pointer;">Digital</a>     
+                        <ul style="margin-top:-15px;">
+                          <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="digitalproduct in digitalproducts" class=" wow fadeInDown" style="margin-top: -7px; padding: 0px  0px  0px 0px;">
+                            <a ng-class="{active : activeMenu === digitalproduct.subCategoryName}"style=" line-height: 1.5; font-size:10px;  cursor:pointer;" ng-click="onesub1(digitalproduct.subCategoryName, 'Digital'); gotoElement('top'); setActive(digitalproduct.subCategoryName)" ng-cloak>{[{digitalproduct.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+                                                                         
+  <!-- .....................................................product catagory............................................................... -->                     
+                      <li style="padding: 0px  0px  0px 0px;">
+                        <a ng-click=" setActive('null'); four()" style="line-height:40px;font-size:{[{size4}]}; font-weight: {[{weight4}]}; cursor:pointer;">Accessories</a>
+                        <ul style="margin-top:-15px;">
+                          <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="accessoriesproduct in accessoriesproducts" class="wow fadeInDown" style="margin-top: -7px; padding: 0px  0px  0px 0px;">
+                            <a ng-class="{active : activeMenu === accessoriesproduct.subCategoryName}" style=" line-height: 1.5; font-size:10px;  cursor:pointer;" ng-click="onesub1(accessoriesproduct.subCategoryName, 'Accessories'); gotoElement('top'); setActive(accessoriesproduct.subCategoryName)" ng-cloak>{[{accessoriesproduct.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                      <li style="padding: 0px  0px  0px 0px;">
+                        <a ng-click=" setActive('null'); six()" style="line-height:40px;font-size:{[{size6}]}; font-weight: {[{weight6}]}; cursor:pointer;">Wind Instruments</a>
+                        <ul style="margin-top:-15px;">
+                          <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="windInstrument in windInstruments" class="wow fadeInDown" style="margin-top: -7px; padding: 0px  0px  0px 0px;">
+                            <a ng-class="{active : activeMenu === windInstrument.subCategoryName}" style=" line-height: 1.5; font-size:10px;  cursor:pointer;" ng-click="onesub1(windInstrument.subCategoryName, 'Wind Instruments'); gotoElement('top'); setActive(windInstrument.subCategoryName)" ng-cloak>{[{windInstrument.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                      <li style="padding: 0px  0px  0px 0px;">
+                        <a ng-click=" setActive('null'); seven()" style="line-height:40px;font-size:{[{size7}]}; font-weight: {[{weight7}]}; cursor:pointer;">Amplifiers</a>
+                        <ul style="margin-top:-15px;">
+                          <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="amplifier in amplifiers" class="wow fadeInDown" style="margin-top: -7px; padding: 0px  0px  0px 0px;">
+                            <a ng-class="{active : activeMenu === amplifier.subCategoryName}" style=" line-height: 1.5; font-size:10px;  cursor:pointer;" ng-click="onesub1(amplifier.subCategoryName, 'Amplifiers'); gotoElement('top'); setActive(amplifier.subCategoryName)" ng-cloak>{[{amplifier.subCategoryName}]}</a> 
+                          </li>
+                        </ul>
+                      </li>
+                              
+  <!-- .....................................................product catagory............................................................... -->
+
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            <li><a href="/store">Stores</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/about-us">About us</a></li>
+            <li><a href="/contact">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav  class="site-nav js-site-nav -in-v navAnimation" style="height:100%; right: {[{rightpad}]};" >
+        <div class="main-menu">
+          <ul class="site-nav__list js-site-nav-list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/">Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+            <li class="site-nav__item">
+              <a ng-click="prod()" class="site-nav__link"  style=" cursor:pointer; font-size:18px; font-size: 18px; font-weight: bold;">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/store" >Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+              <!-- <li class="site-nav__item">
+                  <a class="site-nav__link" href="/news">News/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                  
+              </li> -->
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="/blogs">Blogs&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/about-us">About us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+{{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/testimonial" >Testimonials&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+            
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/contact">Contact us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav  class="site-nav js-site-nav -in-v navAnimation " style="height:100%; right: {[{rightpadsub}]}; margin-top: -99px;"  >
+        <div class="scrollbar contentPost" id="style-1">
+          <div class="force-overflow">
+            <div class="main-menu" style="width: 165px; text-align: left; padding-top: 0px;">
+              <ul data-wow-duration="1000ms" data-wow-delay=".8s" class="site-nav__list js-site-nav-list wow fadeInUp">
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                <li data-wow-duration="1000ms" data-wow-delay=".8s" class="site-nav__item  wow fadeInDown" style="padding: 0px 0px 0px 0px;">
+                  <a class="site-nav__link"style=" line-height: 40px; font-size:{[{size1}]}; font-weight: {[{weight1}]}; cursor:pointer;" ng-click="setActive('null'); one()">Guitars & Basses</a>
+
+                  <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                    <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="guitarsproduct in guitarsproducts" class="site-nav__item wow fadeInDown" style="margin-top: -7px;padding: 0px 0px 0px 0px;">
+                      <a ng-class="{active : activeMenu === guitarsproduct.subCategoryName}" class="site-nav__link" style="line-height: 1.5;font-size:10px; cursor:pointer;" ng-click=" setActive(guitarsproduct.subCategoryName); onesub1(guitarsproduct.subCategoryName, 'Guitars & Basses!'); gotoElement('top');" ng-cloak>{[{guitarsproduct.subCategoryName}]}</a> 
+                    </li>
+                  </ul>  
+                </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                <li data-wow-duration="1000ms" data-wow-delay=".8s" class="site-nav__item  wow fadeInDown" style="padding: 0px 0px 0px 0px;">
+                  <a class="site-nav__link"style=" line-height: 40px; font-size:{[{size5}]}; font-weight: {[{weight5}]}; cursor:pointer;" ng-click="setActive('null'); five()">Ukuleles</a>
+
+                  <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                    <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="ukuleleproduct in ukuleleproducts" class="site-nav__item wow fadeInDown" style="margin-top: -7px;padding: 0px 0px 0px 0px;">
+                      <a ng-class="{active : activeMenu === ukuleleproduct.subCategoryName}" class="site-nav__link" style="line-height: 1.5;font-size:10px; cursor:pointer;" ng-click=" setActive(ukuleleproduct.subCategoryName); onesub1(ukuleleproduct.subCategoryName, 'Ukulele'); gotoElement('top');" ng-cloak>{[{ukuleleproduct.subCategoryName}]}</a> 
+                    </li>
+                  </ul>  
+                </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+                <li data-wow-duration="1000ms" data-wow-delay=".8s" class="site-nav__item wow fadeInDown" style="padding: 0px 0px 0px 0px;">
+                  <a class="site-nav__link" style=" line-height:40px;font-size:{[{size2}]}; font-weight: {[{weight2}]}; cursor:pointer;"ng-click="setActive('null'); two()">Percussions</a>
+
+                  <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                    <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="drumsproduct in drumsproducts" class="site-nav__item wow fadeInDown" style="margin-top: -7px; padding: 0px 0px 0px 0px;">
+                      <a ng-class="{active : activeMenu === drumsproduct.subCategoryName}" class="site-nav__link" style="line-height: 1.5; font-size:10px; cursor:pointer;" ng-click="onesub1(drumsproduct.subCategoryName, 'Drums & percussion'); gotoElement('top'); setActive(drumsproduct.subCategoryName)" ng-cloak>{[{drumsproduct.subCategoryName}]}</a> 
+                    </li>
+                  </ul> 
+              </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+              <li class="site-nav__item" style="padding: 0px 0px 0px 0px;">
+                <a class="site-nav__link"  ng-click="setActive('null'); three()" style="line-height:40px;font-size:{[{size3}]}; font-weight: {[{weight3}]}; cursor:pointer;">Digital</a>
+                            
+                <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                  <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="digitalproduct in digitalproducts" class="site-nav__item wow fadeInDown" style="margin-top: -7px; padding: 0px 0px 0px 0px;">
+                    <a ng-class="{active : activeMenu === digitalproduct.subCategoryName}" class="site-nav__link" style=" line-height: 1.5; font-size:10px; cursor:pointer;" ng-click="onesub1(digitalproduct.subCategoryName, 'Digital'); gotoElement('top'); setActive(digitalproduct.subCategoryName)" ng-cloak>{[{digitalproduct.subCategoryName}]}</a> 
+                  </li>
+                </ul>
+              </li>
+                                                                                      
+  <!-- .....................................................product catagory............................................................... -->                                                                                       
+              <li class="site-nav__item" style="padding: 0px 0px 0px 0px;">
+                <a class="site-nav__link" ng-click=" setActive('null'); four()" style="line-height:40px;font-size:{[{size4}]}; font-weight: {[{weight4}]}; cursor:pointer;">Accessories</a>
+
+                <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                  <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="accessoriesproduct in accessoriesproducts" class="site-nav__item wow fadeInDown" style="margin-top: -7px; padding: 0px 0px 0px 0px;">
+                    <a ng-class="{active : activeMenu === accessoriesproduct.subCategoryName}" class="site-nav__link" style=" line-height: 1.5; font-size:10px; cursor:pointer;" ng-click="onesub1(accessoriesproduct.subCategoryName, 'Accessories'); gotoElement('top'); setActive(accessoriesproduct.subCategoryName)" ng-cloak>{[{accessoriesproduct.subCategoryName}]}</a> 
+                  </li>
+                </ul>
+              </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+              <li class="site-nav__item" style="padding: 0px 0px 0px 0px;">
+                <a class="site-nav__link" ng-click=" setActive('null'); six()" style="line-height:40px;font-size:{[{size6}]}; font-weight: {[{weight6}]}; cursor:pointer;">Wind Instruments</a>
+
+                <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                  <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="windInstrument in windInstruments" class="site-nav__item wow fadeInDown" style="margin-top: -7px; padding: 0px 0px 0px 0px;">
+                    <a ng-class="{active : activeMenu === windInstrument.subCategoryName}" class="site-nav__link" style="line-height: 1.5; font-size:10px; cursor:pointer;" ng-click="onesub1(windInstrument.subCategoryName, 'Wind Instruments'); gotoElement('top'); setActive(windInstrument.subCategoryName)" ng-cloak>{[{windInstrument.subCategoryName}]}</a>
+                  </li>
+                </ul>
+              </li>
+
+  <!-- .....................................................product catagory............................................................... -->
+
+              <li class="site-nav__item" style="padding: 0px 0px 0px 0px;">
+                <a class="site-nav__link" ng-click=" setActive('null'); seven()" style="line-height:40px;font-size:{[{size7}]}; font-weight: {[{weight7}]}; cursor:pointer;">Amplifiers</a>
+
+                <ul class="site-nav__list js-site-nav-list" style="margin-top:-15px;">
+                  <li data-wow-duration="500ms" data-wow-delay=".8s" ng-repeat="amplifier in amplifiers" class="site-nav__item wow fadeInDown" style="margin-top: -7px; padding: 0px 0px 0px 0px;">
+                    <a ng-class="{active : activeMenu === amplifier.subCategoryName}" class="site-nav__link" style="line-height: 1.5; font-size:10px; cursor:pointer;" ng-click="onesub1(amplifier.subCategoryName, 'Amplifiers'); gotoElement('top'); setActive(amplifier.subCategoryName)" ng-cloak>{[{amplifier.subCategoryName}]}</a> 
+                  </li>
+                </ul>
+              </li>
+                          
+  <!-- .....................................................product catagory............................................................... -->
+                 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!--  .........................................Header End............................................... -->
+
+
+<div class="w3-row displayMobileNot" style="background-color:#111;">
+  <div data-wow-duration="50ms" data-wow-delay=".3s" class="w3-col  w3-container w3customclass " style="width:{[{divwidth}]};">
+    <div id="contentPost" data-wow-duration="1000ms" data-wow-delay=".3s" class=" productTop wow {[{sizeimg}]}" ng-if="showif" style="background-image: url({[{image}]});">
+    <!-- <loading></loading> -->
+
+        <!-- <div class="caption1" style="top:75%">
+          <span class="border1" style="padding-top: 0px;
+          padding-bottom: 0px; padding-left: 80px;background-color:transparent;color: #f7f7f7; text-align: left; font-size: 60px;font-family: FuturaStdBold;
+          font-style: italic;"></span>
+          <div class="border2" style=" padding-left: 20%;     font-style: italic;    margin-top: -20px; background-color:transparent; font-size:25px; color: #f7f7f7;  font-size: 35px;"> 
+          </div>
+          <div class="border3" style=" background-color:transparent; font-size:28px; color: #f7f7f7; padding-left: 30%;">
+          </div>
+        </div> -->
+    </div>
+    <div id="top" ng-if="show" >
+      <div class="productSubTop" data-wow-duration="1000ms" data-wow-delay=".3s" style="background-image: url({[{image}]});">
+        <loading></loading>
+        <div id="productsubdescription">
+          <div class="productsubdescriptionTitle"> 
+            <span ng-cloak>{[{myData1[0].productsTitle}]}</span>
+          </div>
+          <div class="productsubdescriptionSummary">
+            <hr ng-if="loadingHr" style="    margin-top: 20px;">
+            <p ng-cloak>{[{myData1[0].productsSummary}]}</p>
+          </div>
+          <!-- <div class="border3" style=" background-color:transparent; font-size:28px; color: #f7f7f7; padding-left: 30%;"></div> -->
+          <div> <h2 style="color: #fff; text-align: center; padding: 120px 0 0 0; font-family: FuturaStdBold;font-style: italic; font-size: 25px; ">Explore Range</h2>
+          <div class="bounce" ng-click="gotoElement('bottom'); " ng-if="loadingHr"></div>
+        </div>
+        </div>
+      </div>
+<!-- ................................................................................................................................ -->
+
+      <div id="bottom" class="row " ng-repeat="x in myData1">
+        <div class="col-xs-1"></div>
+
+        <div class="col-xs-3 item-photo">
+          <img src = "{[{variants.ImageURL}]}" />
+        </div>
+
+        <div class="col-xs-6" ng-if="show">
+
+          <div class="row" style="margin-top: 200px; height: 110px;">
+            
+            <div class="col-xs-6" style="width: 50%">
+              <div class="productVariants">
+                <h4 ng-bind="x.productsTitle"></h4>
+                <div class="productVariantList">
+                  <div class="dis_list">
+                    <p ng-bind="variants.SizeSummary"></p>
+                    <p ng-bind="variants.Description"></p>
+                    <p ng-bind="variants.body"></p>
+                    <p ng-bind="variants.Bridge"></p>
+                    <p ng-bind="variants.Type"></p>
+                    <p ng-bind="variants.Finish"></p>
+                  </div>
+                </div><br><br>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">Read More</button>
+                
+
+  <!-- Modal -->
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div id="readModuleStart">
+          <div class="readModuleTitle"> 
+            <span ng-cloak>{[{myData1[0].readTitle}]}</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" class="carousel slide" data-ride="carousel" style = "margin:0 auto;">
+      <div class="item active">
+        <img src="{[{variants.image1}]}" class="img-responsive" id="abc" style="margin:0 auto;" alt="imag1">
+      </div>
+
+      <div class="item">
+        <img src="{[{variants.image2}]}" class="img-responsive" id="abc" style="margin:0 auto;" alt="image2">
+      </div>
+    
+      <div class="item">
+        <img src="{[{variants.image3}]}" class="img-responsive" id="abc" style="margin:0 auto;" alt="image3">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" >
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" >
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+ {{!-- <div class="row" id= "readimage" >
+  
+    <div class="col-sm-4">
+      <div class="thumbnail">
+       <img src="{[{variants.image1}]}" alt="Lights" style="width:250%">
+          </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{[{variants.image2}]}" alt="Nature" style="width:250%">
+          </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{[{variants.image3}]}" alt="Fjords" style="width:250%">
+          </div>
+    </div>
+
+  </div> --}}
+
+</div>
+    <div class="readModuleDescription">
+            <hr ng-if="loadingHr" style="margin-top: 20px;width:100%;">
+             <div> <h2 style="color: #000; text-align: left;font-family:FuturaStdBold; width:100%; font-style: italic; font-weight:bold; font-size: 20px; ">Description</h2>
+            <p ng-cloak>{[{myData1[0].readDescription}]}</p>
+          </div>
+          </div>
+          <div class="readModuleSpecification">
+            <hr ng-if="loadingHr" style="margin-top: 20px; width:100%;">
+            <div> <h2 style="color: #000; text-align: left;font-family:FuturaStdBold; width:100%; font-style: italic; font-weight:bold; font-size: 20px; ">Specification</h2>
+            <p ng-cloak>{[{myData1[0].readSpecification}]}</p>
+          </div>
+        </div>
+      </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+              </div>
+            </div>
+          
+
+            <div class="col-xs-6" style="width: 50%">
+              <div class="sizeController"  ng-if="KeyVariant != 'null' ">
+                <h4 class="title-attr">{[{KeyVariant}]}</h4> 
+                <hr> 
+                <div style="margin-top: 5px;">
+                  <label style="" ng-repeat="v in prodVariantsSize">
+                    <a ng-class="{activeSize : activeMenuSize === v}" class="btn" ng-click="setActiveSize(v); sizeChange(v); ">{[{v}]}</a>
+                  </label>
+                  <!-- <p style="font-size: 15px;     margin-top: -2px; padding-right: 7px; color: #fff; text-align: right;">{[{variants.size}]}</p> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="colorController">
+            <h4 class="title-attr1">{[{myData1[0].chooseYourOption}]}</h4> 
+            <hr>  
+            <div style="margin-right: -6px;">
+              <label class="attr" style="background:{[{v.color}]};" ng-repeat="v in prodVariants">
+                <input class="attr" type="radio" name="v" ng-model="selectedValue.id" value="{[{v.color}]}"  ng-change="colorChange(v)" hidden>
+              </label>  
+            </div>
+          </div>
+
+        </div>                              
+        
+        <div class="col-xs-2"></div>
+      </div>
+    </div> 
+  </div>
+  <div class="w3-col  w3-container address wow fadeInRight" data-wow-duration="500ms" data-wow-delay=".3s" style="width:12%"></div>
+
+<footer id="footer" data-wow-duration="50ms" data-wow-delay=".3s" class="w3-col  w3-container w3customclass " style="width:{[{divwidth}]}; min-height: 0;">
+   <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-2" >
+         <!-- Social Media -->
+         <ul>
+            <li><a href="/about-us">About us </a></li>
+         <li><a href="/products">Products</a></li>
+             <li> <a href="/store">Stores</a></li>
+        
+            <li> <a href="/news">News/Media</a></li>
+         </ul>
+      </div>
+
+      <div class="col-md-2" style="display: inline">
+         <ul>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/testimonial">Testimonials</a></li>
+            <li><a href="/kadenceperience">Kadence Xperience</a></li>
+           {{!--  <li><a href="/kadencyngage">Customer Support </a></li> --}}
+         </ul>
+         </ul>
+      </div>
+      <div class="col-md-2 " >
+         <ul>
+              <li><a href="/faq">FAQ</a></li>
+             <li><a href="/contact">Partner with Kadence</a></li>
+           
+            <li> <a href="/privarypolicy">Privacy Policy</a></li>
+            
+         </ul>
+          
+
+      </div>
+      <div class="col-md-3 colMd3-1">
+         <img class="img" src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/palm_expo_logo_x20m3a.png"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <img  class="img" src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/NAAM_zzwnwt.png">
+              </div>
+        {{!-- <div class="col-md-4 ">
+        <ul>
+         
+          <li class="searchList">    <div class="input-group">
+           <span class="input-group-btn">
+        <button class="footerBtn btn btn-sm" type="button">SIGN UP</button>
+      </span>
+      <input class="form-control input-sm" style="
+    border-radius: 0;" type="text" class="form-control" placeholder="ENTER YOUR EMAIL ID">
+     
+    </div> </li>
+
+
+ <li class="socialList"><p>FOLLOW US ON</p><span style="    width: 382px;">{{>organization-info/organization-social-info orgInfo=data.commonData.organizationInfoData}} </span> </li>
+        </ul>
+
+      </div> --}}
+
+
+<div class="col-md-3 colMd3-2">
+   <div class="input-group">
+           <span class="input-group-btn">
+        <button class="footerBtn btn btn-sm" type="button">SIGN UP</button>
+      </span>
+      <input class="form-control input-sm" style="
+    border-radius: 0;" type="text" class="form-control" placeholder="ENTER YOUR EMAIL ID">
+     
+    </div> 
+
+<div class="follow">
+<p>FOLLOW US ON</p><span style="width: 382px;">{{>organization-info/organization-social-info orgInfo=data.commonData.organizationInfoData}} </span>
+
+        </div>
+
+      </div>
+{{!-- div classcol-md-4 end --}}
+
+
+      </div>
+      {{!-- row end --}}
+  
+  <p class="copyright" style="font-size: 10px; margin-left:-15px;">&copy
+            {{data.commonData.organizationInfoData.orgName }} {{data.commonData.currentYear}} </p>
+
+
+     
+       
+  {{!-- <div class="row"> 
+  <div class="col-md-6" >
+<ul style="padding-left: 30%;">
+<img src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/NAAM_zzwnwt.png"/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/palm_expo_logo_x20m3a.png"/>
+
+</ul> 
+</div>
+</div>  --}}
+
+   </div>
+</footer>
+  
+</div>
+
+
+<!-- .............................................For Mobile...................................................................... -->
+
+<div class="w3-row displayMobile" style="background-color:#111;">
+  <div data-wow-duration="50ms" data-wow-delay=".3s"  class="w3-col  w3-container w3customclass " style="width:100%;">
+    <div id="contentPost" data-wow-duration="1000ms" data-wow-delay=".3s" class=" productTop wow {[{sizeimg}]}" ng-if="showif" style="background-image: url({[{mobileImage}]});">
+      <!-- <div class="caption1" style="top:75%">
+        <span class="border1" style="padding-top: 0px;
+        padding-bottom: 0px; padding-left: 80px;background-color:transparent;color: #f7f7f7; text-align: left; font-size: 60px;font-family: FuturaStdBold;
+        font-style: italic;"></span>
+        <div class="border2" style=" padding-left: 20%;     font-style: italic;    margin-top: -20px; background-color:transparent; font-size:25px; color: #f7f7f7;  font-size: 35px;"> 
+        </div>
+        <div class="border3" style=" background-color:transparent; font-size:28px; color: #f7f7f7; padding-left: 30%;">
+        </div>
+      </div> -->
+    </div>
+    <div id="top" ng-if="show" >
+      <div class="productSubTop" data-wow-duration="1000ms" data-wow-delay=".3s" style="background-image: url({[{mobileImage}]});">
+        <loading></loading>
+        <div id="productsubdescription">
+          <div class="productsubdescriptionTitle"> 
+            <span ng-cloak>{[{myData1[0].productsTitle}]}</span>
+          </div>
+          <div class="productsubdescriptionSummary">
+            <hr ng-if="loadingHr" style="    margin-top: 20px;">
+            <p ng-cloak>{[{myData1[0].productsSummary}]}</p>
+          </div>
+          <div> <h2 style="color: #fff; text-align: center; padding: 120px 0 0 0; font-family: FuturaStdBold;font-style: italic; font-size: 25px; ">Explore Range</h2>
+          <div class="bounce" ng-click="gotoMobileElement('mobileBottom'); " ng-if="loadingHr"></div>
+        </div>
+        </div>
+      </div>
+
+      <div id="mobileBottom" class="row " ng-repeat="x in myData1">
+        <div class="col-sm-12 item-photo">
+          <img src = "{[{variants.ImageURL}]}" />
+          <div class="productVariants" style="height: 150px">
+            <h4 ng-bind="x.productsTitle"></h4>
+            <div class="productVariantList">
+              <div class="dis_list">
+                <p ng-bind="variants.Description"></p>
+                <p ng-bind="variants.Body"></p>
+
+                <p ng-bind="variants.Bridge"></p>
+                <p ng-bind="variants.Type"></p>
+                <p ng-bind="variants.Finish"></p>
+              </div>
+            </div>{{!-- <br><br>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal  ">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+      <label for="comment">Description:</label>
+      <textarea class="form-control" rows="5" id="desc"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="comment">Specification:</label>
+      <textarea class="form-control" rows="5" id="desc"></textarea>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+          </div>
+        </div> --}}
+
+        <div class="container" style="margin-top: 150px;">
+          <div class="sizeController"  ng-if="KeyVariant != 'null'">
+            <h4 class="title-attr">{[{KeyVariant}]}</h4> 
+            <hr> 
+            <div style="margin-top: 5px;">
+              <label style="" ng-repeat="v in prodVariantsSize">
+                <a ng-class="{activeSize : activeMenuSize === v}" class="btn" ng-click="setActiveSize(v); sizeChange(v); ">{[{v}]}</a>
+              </label>   
+            </div>
+          </div>
+        </div>
+
+        <div class="colorController container" style="margin-bottom: 50px;">
+          <h4 class="title-attr1">{[{myData1[0].chooseYourOption}]}</h4> 
+          <hr>  
+          <div style="margin-right: -6px;">
+            <label class="attr" style="background:{[{v.color}]};" ng-repeat="v in prodVariants">
+              <input class="attr" type="radio" name="v" ng-model="selectedValue.id" value="{[{v.color}]}"  ng-change="colorChange(v)" hidden>
+            </label>  
+            </div>
+        </div> 
+
+      </div>
+    </div> 
+  </div>
+  <div class="w3-col  w3-container address wow fadeInRight" data-wow-duration="500ms" data-wow-delay=".3s" style="width:12%"></div>
+
+
+<footer id="footer" style="margin-top: {[{marginTop}]};">
+   <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-2" >
+         <!-- Social Media -->
+         <ul>
+            <li><a href="/about-us">About us </a></li>
+         <li><a href="/products">Products</a></li>
+             <li> <a href="/store">Stores</a></li>
+        
+            <li> <a href="/news">News/Media</a></li>
+         </ul>
+      </div>
+
+      <div class="col-md-2" style="display: inline">
+         <ul>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/testimonial">Testimonials</a></li>
+            <li><a href="/kadenceperience">Kadence Xperience</a></li>
+           {{!--  <li><a href="/kadencyngage">Customer Support </a></li> --}}
+         </ul>
+         </ul>
+      </div>
+      <div class="col-md-2 " >
+         <ul>
+              <li><a href="/faq">FAQ</a></li>
+             <li><a href="/contact">Partner with Kadence</a></li>
+           
+            <li> <a href="/privarypolicy">Privacy Policy</a></li>
+            
+         </ul>
+          
+
+      </div>
+      <div class="col-md-3 colMdMobile3-1">
+         <img class="img" src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/palm_expo_logo_x20m3a.png"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <img  class="img" src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/NAAM_zzwnwt.png">
+              </div>
+        {{!-- <div class="col-md-4 ">
+        <ul>
+         
+          <li class="searchList">    <div class="input-group">
+           <span class="input-group-btn">
+        <button class="footerBtn btn btn-sm" type="button">SIGN UP</button>
+      </span>
+      <input class="form-control input-sm" style="
+    border-radius: 0;" type="text" class="form-control" placeholder="ENTER YOUR EMAIL ID">
+     
+    </div> </li>
+
+
+ <li class="socialList"><p>FOLLOW US ON</p><span style="    width: 382px;">{{>organization-info/organization-social-info orgInfo=data.commonData.organizationInfoData}} </span> </li>
+        </ul>
+
+      </div> --}}
+
+
+<div class="col-md-3 colMd3-2">
+   <div class="input-group">
+           <span class="input-group-btn">
+        <button class="footerBtn btn btn-sm" type="button">SIGN UP</button>
+      </span>
+      <input class="form-control input-sm" style="
+    border-radius: 0;" type="text" class="form-control" placeholder="ENTER YOUR EMAIL ID">
+     
+    </div> 
+
+<div class="follow">
+<p>FOLLOW US ON</p><span style="width: 382px;">{{>organization-info/organization-social-info orgInfo=data.commonData.organizationInfoData}} </span>
+
+        </div>
+
+      </div>
+{{!-- div classcol-md-4 end --}}
+
+
+      </div>
+      {{!-- row end --}}
+  
+  <p class="copyright" style="font-size: 10px; margin-left:-15px;">&copy
+            {{data.commonData.organizationInfoData.orgName }} {{data.commonData.currentYear}} </p>
+
+
+     
+       
+  {{!-- <div class="row"> 
+  <div class="col-md-6" >
+<ul style="padding-left: 30%;">
+<img src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/NAAM_zzwnwt.png"/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img src="http://res.cloudinary.com/www-kadence-in/image/upload/c_scale,w_150/v1512559098/palm_expo_logo_x20m3a.png"/>
+
+</ul> 
+</div>
+</div>  --}}
+
+   </div>
+</footer>
+</div>
+
+<!-- .............................................For Mobile End...................................................................... -->
+
+</div>

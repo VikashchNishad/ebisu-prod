@@ -1,0 +1,383 @@
+{{!-- {{#pagetitle 'page'}}
+    <title>Contact us | {{data.commonData.organizationInfoData.orgName}}</title>
+{{/pagetitle}}
+
+{{>shared/global-header headerTitle=activePageMenu}}
+
+<section id="contact-section" style="background-color:gray">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-6">
+                {{>contact-us/contact-form}}
+            </div>
+        </div>
+        <div class="row address-details">
+            {{>organization-info/organization-info orgInfo=data.commonData.organizationInfoData}}
+        </div>
+    </div>
+</section> --}}
+
+
+{{#pagetitle 'page'}}
+    <title>Contact us | {{data.commonData.organizationInfoData.orgName}}</title>
+{{/pagetitle}}
+
+{{>shared/global-header headerTitle=activePageMenu}}
+
+
+
+<style type="text/css">
+.contentPost { display:none;}
+
+
+#contact-section {
+    background-color:#000;
+  padding: 90px 0px 40px 0px;
+}
+#contact-section .contact-form {
+  /*margin-top: 42px;*/
+}
+#contact-section .contact-form .btn-send {
+  /*margin-top: 35px;*/
+  color: #fff;
+  outline: none;
+  background: #444;
+  border-radius: 6px;
+}
+#contact-section .contact-form .btn-send:hover {
+  border: 1px solid #02bdd5;
+}
+#contact-section input {
+  display: block;
+  /*height: 40px;*/
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  border-radius: 1px;
+  border: 1px solid rgba(111, 121, 122, 0.3);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#contact-section textarea {
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  height: 80px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#contact-section .address,
+#contact-section .email,
+#contact-section .phone {
+  /*text-align: center;*/
+/*  background: #F7F7F7;
+  padding: 20px 0 40px 0;*/
+  /*margin-bottom: 20px;*/
+}
+#contact-section .address i,
+#contact-section .email i,
+#contact-section .phone i {
+  font-size: 32px;
+  /*color: #02bdd5;*/
+  color: #f5f5f5;
+}
+#contact-section .address h5,
+#contact-section .email h5,
+#contact-section .phone h5 {
+  font-size: 11px;
+  line-height: 1.4;
+}
+#contact-section .address-details {
+  /*padding-top: 70px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#contact-section .col-md-6{
+/*height:525px;*/
+height:590px;
+
+
+}
+
+#contact-section .col-md-4{
+width: 34%;
+}
+
+
+
+
+@media screen and (max-width: 40.5em) {
+
+
+
+#contact-section {
+    background-color:#000;
+  padding: 90px 0px 40px 0px;
+}
+#contact-section .contact-form {
+  /*margin-top: 42px;*/
+}
+#contact-section .contact-form .btn-send {
+  /*margin-top: 35px;*/
+  color: #fff;
+  outline: none;
+  background: #444;
+  border-radius: 6px;
+}
+#contact-section .contact-form .btn-send:hover {
+  border: 1px solid #02bdd5;
+}
+#contact-section input {
+  display: block;
+  /*height: 40px;*/
+  padding: 6px 12px;
+  font-size: 10px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  border-radius: 1px;
+  border: 1px solid rgba(111, 121, 122, 0.3);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#contact-section textarea {
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  height: 80px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#contact-section .address,
+#contact-section .email,
+#contact-section .phone {
+  /*text-align: center;*/
+/*  background: #F7F7F7;
+  padding: 20px 0 40px 0;*/
+  /*margin-bottom: 20px;*/
+}
+#contact-section .address i,
+#contact-section .email i,
+#contact-section .phone i {
+  font-size: 32px;
+  /*color: #02bdd5;*/
+  color: #f5f5f5;
+}
+#contact-section .address h5,
+#contact-section .email h5,
+#contact-section .phone h5 {
+  font-size: 11px;
+  line-height: 1.4;
+}
+#contact-section .address-details {
+  /*padding-top: 70px;*/
+}
+
+
+
+
+
+
+#contact-section .col-md-6{
+height:525px;
+width: 100%;
+}
+
+#contact-section .col-md-4{
+width: 100%;
+}
+
+.collapse-main-menu {
+  text-align: center;
+  display: block;
+}
+
+}
+
+</style>
+
+
+
+<script >$(document).ready(function() {
+    $(".contentPost").delay(500).fadeIn(500);
+});</script>
+
+
+<header id="top-bar" class="navbar-fixed-top animated-header">
+   <div class="container-fluid">
+    
+        <div class="navbar-header" style="padding-left: 25px;">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+
+<div class="navbar-brand">
+            <a href="/">
+                <img src="http://res.cloudinary.com/ebisu-technology-pvt-ltd/image/upload/v1504793954/organizationlogowhite_ow7t1a.png"
+                     alt="organizationlogo">
+            </a>
+        </div>
+            {{!-- {{>shared/header/header-logo orgInfo=orgInfo}} --}}
+        </div>
+
+
+<nav class="collapse navbar-collapse navbar-right" role="navigation">
+    <div class="collapse-main-menu">
+        <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+                <li>
+                    <a href="/products">Products</a>
+                </li>
+
+                <li>
+                    <a href="/store">Stores</a>
+                </li>
+
+                <li>
+                    <a href="/blogs">Blogs</a>
+                </li>
+
+                <li>
+                    <a href="/about-us">About us</a>
+                </li>
+
+                {{!-- <li>
+                    <a href="/testimonial">Testimonials</a>
+                </li> --}}
+
+                <li>
+                    <a href="/contact" style="font-size: 18px; font-weight: bold;">Contact us</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+       <nav class="site-nav js-site-nav -in-v" style="height:0%">
+            <div class="main-menu">
+            
+                <ul class="site-nav__list js-site-nav-list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/" >Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/products">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/store">Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/news" >News/Media&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/blogs" >Blogs&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/about-us">About us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+
+                         {{!-- <li class="site-nav__item">
+                            <a class="site-nav__link" href="/testimonial" >Testimonials&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li> --}}
+
+                        <li class="site-nav__item">
+                    <a class="site-nav__link" href="/contact" style="font-size: 18px; font-weight: bold;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="contact-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                {{>organization-info/organization-map-location orgInfo=data.commonData.organizationInfoData googleMap=data.googleMapData}}
+            </div>
+
+             {{!-- <div class="col-md-5">
+             </div> --}}
+
+            <div class="col-md-4 contentPost" >
+
+                {{>contact-us/contact-form}}
+
+                <div id="contentPost" class="row address-details" style="margin: 0px;">
+            {{>organization-info/organization-info orgInfo=data.commonData.organizationInfoData}}
+        </div>
+            </div>
+
+        </div>
+
+         <div class="col-md-2">
+             </div>
+
+
+        {{!-- <div class="row address-details">
+            {{>organization-info/organization-info orgInfo=data.commonData.organizationInfoData}}
+        </div>
+ --}}    </div>
+</section>
+{{>shared/footer/footer}}

@@ -1,0 +1,524 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+{{!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script> --}}
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVquwWR2pRrTS38icdrhcvML3K_xk1CrM"></script>
+
+<style>
+
+.scrollbar
+{
+  /*float: left;*/
+  height: 420px;
+  background: #fff;
+  overflow-y: scroll;
+  /*margin-top: 5px;*/
+      background-color: #000;
+}
+
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  background-color: #555;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #FFFFFF;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  background-color: #333;
+  background-image: -webkit-linear-gradient(90deg,
+                                            rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 25%,
+                        transparent 100%,
+                        rgba(0, 0, 0, 0) 75%,
+                        transparent)
+}
+
+.store-fluid {
+padding-top: 80px; padding-left: 15px;
+}
+
+
+ .rowStore {
+    padding-bottom: 50px; height: 630px;
+}
+
+
+#store .col-md-6 {
+height: 580px;
+
+    } 
+
+#store .col-md-6 h1 {
+font-size: 55px; color:#fff; font-weight: bold;
+
+    } 
+
+#store .col-md-6 input {
+width: 550px; 
+background-color: #eee; 
+border-radius: 6px;
+font-size: 12px;
+
+    } 
+
+.force-overflow {
+
+color: #fff;
+ text-align: center ; 
+margin-top: -10px; 
+padding-bottom: 2px;
+}
+
+.force-overflow h2 {
+
+ color: #fff; text-align: left; 
+ text-transform: uppercase; 
+ font-size: 28px; 
+ font-weight: bold;
+
+}
+
+.storeLine1 {
+ word-spacing: -1px; font-family: CenturyGothic; text-align: left; font-size: 13px; margin-top: -22px;
+}
+
+.storeLine2 {
+     word-spacing: -1px; font-size: 13px; margin-top: -12px; float: left;
+}
+
+.storeLine3 {
+      word-spacing: -1px;     font-size: 13px; margin-top: -12px;
+}
+
+.col-map {
+height:580px; width: 41.66666667%;
+    margin-top: 20px;
+}
+
+#map {
+height: 520px; width: 100%; 
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 40.5em) {
+
+#store {
+    padding-left: 5px;
+}
+.scrollbar
+{
+  /*float: left;*/
+  height: 420px;
+  background: #fff;
+  overflow-y: scroll;
+  /*margin-top: 5px;*/
+      background-color: #000;
+}
+
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+  background-color: #555;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 0px;
+  background-color: #FFFFFF;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  background-color: #333;
+  background-image: -webkit-linear-gradient(90deg,
+                                            rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 25%,
+                        transparent 100%,
+                        rgba(0, 0, 0, 0) 75%,
+                        transparent)
+}
+
+
+.store-fluid {
+padding-top: 80px; padding-left: 0px;
+}
+
+ .rowStore {
+    padding-bottom: 50px; height: 630px;
+}
+
+
+#store .col-md-6 {
+height: 580px;
+
+    } 
+
+#store .col-md-6 h1 {
+font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+    } 
+
+#store .col-md-6 input {
+width: 90%;
+background-color: #eee; 
+border-radius: 6px;
+font-size: 12px;
+
+    } 
+
+.force-overflow {
+
+color: #fff;
+ text-align: center ; 
+margin-top: -10px; 
+padding-bottom: 2px;
+}
+
+.force-overflow h2 {
+
+ color: #fff; text-align: left; 
+ text-transform: uppercase; 
+ font-size: 20px; 
+ font-weight: bold;
+
+}
+
+.storeLine1 {
+ word-spacing: 0px; font-family: CenturyGothic; text-align: left; font-size: 10px;
+    margin-top: -15px
+}
+
+.storeLine2 {
+     word-spacing: 0px; font-size: 11px; margin-top: -12px; float: left;
+}
+
+.storeLine3 {
+      word-spacing: 0px;     font-size: 11px; margin-top: -12px;
+}
+
+.col-map {
+height: 580px;
+    width: 108%;
+    margin-top: -70px;
+}
+
+#map {
+height: 520px; width: 100%; 
+}
+
+}
+
+
+
+
+
+</style>
+<script>
+var app = angular.module('myApp', []);
+app.config(function($interpolateProvider) {
+    $interpolateProvider.startSymbol('{[{');
+    $interpolateProvider.endSymbol('}]}');
+});
+app.controller('myCtrl', function($scope, $http) {
+  //$http.get("http://139.59.37.234:80/api/store")
+  // $http.get("http://localhost:3000/api/store")
+  $http.get("http://"+ window.location.host + "/api/store?perpage=100&page=1")
+
+  .then(function(response) {
+      $scope.myData = response.data.dataList;
+      // console.log($scope.myData.length);
+
+
+//       var locations = [
+//   ['Store 1', $scope.myData[0].latitude, $scope.myData[0].longitude, 4],
+//   ['Store 2', 12.9592, 77.6974, 3],
+//   ['Store 3', 12.9105, 77.5857, 2],
+//   ['Store 4', 12.9172 , 77.6228 , 1]
+// ];
+    // When the user clicks the marker, an info window opens.
+initMap();
+
+    function initMap() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 4,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(12.9716, 77.5946), 
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    }
+]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                for (count = 0; count < $scope.myData.length; count++) {  
+      // console.log($scope.myData.length);
+
+              
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng($scope.myData[count].latitude, $scope.myData[count].longitude),
+                map: map
+                });
+
+            marker.info = new google.maps.InfoWindow({
+                content: $scope.myData[count].storeName
+                });
+                
+                // marker.info.open(map, marker);
+
+            google.maps.event.addListener(marker, 'mouseover', function() {  
+                // this = marker
+                var marker_map = this.getMap();
+                this.info.open(marker_map, this);
+                // Note: If you call open() without passing a marker, the InfoWindow will use the position specified upon construction through the InfoWindowOptions object literal.
+                });
+            google.maps.event.addListener(marker, 'mouseout', function() {  
+                // this = marker
+                this.info.close();
+                // Note: If you call open() without passing a marker, the InfoWindow will use the position specified upon construction through the InfoWindowOptions object literal.
+                });
+
+        }
+
+        
+            }
+  });
+});
+
+</script>
+
+
+
+    <div class="container-fluid store-fluid" ng-app="myApp" ng-controller="myCtrl">
+
+        <div id="store" class="container-fluid ">
+            <div class="row rowStore" >
+               <div class="col-md-6">
+                   <div>
+                        <h1>STORES</h1>
+                            <input id="pac-input" class="form-control input-sm" placeholder="Enter your city / pincode" type="text" ng-model="searchKey" >
+                    </div>
+
+                <div>
+
+            <div class="scrollbar" id="style-1">
+            <div class="force-overflow" ng-repeat="x in myData | filter:searchKey" >
+                <h2 ng-bind="x.storeName"></h2>
+                <p class="storeLine1" ng-cloak>{[{x.addressLine1}]} {[{x.addressLine2}]} {[{x.storeArea}]}</p>
+    
+                <p class="storeLine2" ng-cloak>Pincode : {[{x.pincode}]}</p>
+                <p class="storeLine3" ng-cloak>Email : {[{x.email}]}</p>
+             </div>
+
+             </div>
+
+     </div>
+            </div>
+
+
+            <div class="col-md-5 col-map">
+               <div id="map"></div>
+            </div>
+
+
+               <div class="col-md-1"></div>
+          
+        </div>
+     <div>
+    </div>

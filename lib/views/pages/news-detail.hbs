@@ -1,0 +1,113 @@
+{{!-- {{#pagetitle 'page'}}
+    <title>{{data.newsDetailData.newsTitle}}</title>
+{{/pagetitle}}
+
+{{>shared/article-detail-header title=data.newsDetailData.newsTitle author=data.newsDetailData.newsAuthor  date=data.newsDetailData.newsDate  views=data.newsDetailData.pageViews}}
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            {{>news/news-detail newsDetailObj=data.newsDetailData}}
+        </div>
+    </div>
+</section>
+
+
+{{#pagetitle 'pagescripts'}}
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/news-image-carousel.js"></script>
+    {{>shared/article-comment urlSlog=data.newsDetailData.urlSlog disqusURL=data.commentSettingData.disqusURL}}
+
+{{/pagetitle}} --}}
+
+
+
+
+        <div class="row" style="background-color: #000; margin-right: 0px;" >
+    <div class="col-xs-6 col-sm-8 col-lg-10 single-post-pan" style="background-color: #E6E6FA;">
+   {{#pagetitle 'page'}}
+    <title>{{data.newsDetailData.newsTitle}}</title>
+{{/pagetitle}}
+
+
+<header id="top-bar" class="navbar-fixed-top animated-header">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            {{>shared/header/header-logo orgInfo=orgInfo}}
+        </div>
+       <nav class="site-nav js-site-nav -in-v" style="height:100%">
+            <div class="main-menu">
+                <ul class="site-nav__list js-site-nav-list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/" >Home&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/products">Products&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/store">Stores&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        
+                        <li class="site-nav__item">
+                          <a class="site-nav__link" href="/blogs">Blog&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/about-us" >About Us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/testimonial" >Testimonials&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/contact">Contact Us&nbsp;&nbsp;&nbsp;&nbsp;-</a>
+                            
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+{{!-- {{data.blogDetailData.addedOn}} --}}
+{{>shared/article-detail-header title=data.newsDetailData.newsTitle author=data.newsDetailData.newsAuthor  date=data.newsDetailData.newsDate  views=data.newsDetailData.pageViews}}
+
+
+
+<section class="single-post">
+           {{>news/news-detail newsDetailObj=data.newsDetailData}}
+
+
+</section>
+
+        </div>
+
+    <div class="col-xs-6 col-sm-4 col-lg-2">
+    </div>
+    
+    </div>
+
+{{#pagetitle 'pagescripts'}}
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/news-image-carousel.js"></script>
+    {{>shared/article-comment urlSlog=data.newsDetailData.urlSlog disqusURL=data.commentSettingData.disqusURL}}
+
+{{/pagetitle}}

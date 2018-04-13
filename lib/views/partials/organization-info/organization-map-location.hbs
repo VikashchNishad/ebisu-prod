@@ -1,0 +1,293 @@
+
+
+
+
+
+
+<style type="text/css">
+
+.contentPost { display:none;}
+
+#contact-map {
+        width: 95%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+        border-radius: 8px;
+    margin-left: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 40.5em) {
+
+#contact-map {
+        width: 95%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+        border-radius: 8px;
+    margin-left: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+
+}
+
+</style>
+
+
+<script >$(document).ready(function() {
+    $(".contentPost").delay(500).fadeIn(500);
+});</script>
+
+
+
+
+<div class="map-area">
+    <h2 class="subtitle  wow fadeInDown contentPost" data-wow-duration="500ms" data-wow-delay=".3s">Find Us</h2>
+    <div class="map">
+        <div id="contact-map"></div>
+    </div>
+</div>
+
+
+{{#pagetitle 'pagescripts'}}
+    {{#if googleMap}}
+        <script type="text/javascript"
+                src="//maps.googleapis.com/maps/api/js?libraries=places&key={{googleMap.googleMapsApiKey}}"></script>
+        <!-- Google maps api -->
+        <script type="text/javascript">
+            var geocoder = new google.maps.Geocoder();
+
+
+
+            
+            var address = "{{orgInfo.streetAddress}} {{orgInfo.addressLine}} {{orgInfo.city}},{{orgInfo.region}} {{orgInfo.state}}, {{orgInfo.country}} - {{orgInfo.postalCode}}/{{orgInfo.zipAddress}}"; //Add your address here, all on one line.
+            var latitude = {{googleMap.latitude}};
+            var longitude ={{googleMap.longitude}};
+            var isDraggable = document.documentElement.clientWidth > 480 ? true : false;
+            function initGoogleMap() {
+                var styles = [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+        {
+                        stylers: [
+                            {saturation: 0}
+                        ]
+                    },
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    }
+];
+                var options =
+                {
+                    mapTypeControlOptions: {
+                        mapTypeIds: ['Styled']
+                    },
+                    center: new google.maps.LatLng(latitude, longitude),
+                    zoom: {{googleMap.zoom}}, 
+                    scrollwheel: {{googleMap.scrollWheel}},
+                    navigationControl:  {{googleMap.showMarker}},
+                    mapTypeControl: false,
+                    zoomControl: true,
+                    disableDefaultUI: true,
+                    draggable: isDraggable,
+                    mapTypeId: 'Styled'
+
+
+                };
+                var div = document.getElementById('contact-map');
+                var map = new google.maps.Map(div, options);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    draggable: false,
+                    animation: google.maps.Animation.DROP,
+                    position: new google.maps.LatLng(latitude, longitude)
+                });
+                var styledMapType = new google.maps.StyledMapType(styles, {name: 'Styled'});
+                map.mapTypes.set('Styled', styledMapType);
+
+                infowindow = new google.maps.InfoWindow({
+                    content: '<strong>{{googleMap.markerTitle}}</strong><br>{{googleMap.placeName}}<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', initGoogleMap);
+        </script>
+    {{/if}}
+{{/pagetitle}}

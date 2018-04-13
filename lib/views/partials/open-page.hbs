@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/"/>
+    {{{_pagetitle.page}}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{!-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Kadence">
+    <meta name="author" content="Kadence">
+    <meta name="application-name" content="Kadence">
+    <meta name="theme_color" content="#f05f40">
+    <meta name="background_color" content="#f05f40">
+    <link rel="icon" href="/img/defaults/Kadencefavi.png" sizes="144x144" type="image/png">
+    {{!-- <link rel="icon"  sizes="16x16 32x32 48x48" href="unnamed.jpg" type="image/x-icon"> --}}
+    <link rel="manifest" href="/manifest.webmanifest">
+    {{{_pagetitle.pagestylesheets}}}
+    {{>page-stylesheets/page-common-stylesheets}}
+    {{>page-scripts/header-common-scripts}}
+    {{>page-scripts/google-analytics}}
+
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Product",
+  "name" : "Nodebeats",
+  "category":"CMS",
+  "potentialAction":"Web application development",
+   "description": "Nodebeats - Your Next Favourite Open Source CMS Build with MEAN Stack",
+  "sameAs" : [
+    "https://www.facebook.com/nodebeats",
+    "https://twitter.com/nodebeats",
+    "https://plus.google.com/+nodebeats",
+  "https://github.com/nodebeats/nodebeats",
+  "https://gitter.com/nodebeats/nodebeats"
+  ]
+}
+    </script>
+    <script >
+      $(document).click(function (event) {
+          var clickover = $(event.target);
+          var $navbar = $(".navbar-collapse");               
+          var _opened = $navbar.hasClass("in");
+          if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+              $navbar.collapse('hide');
+          }
+      });
+    </script>
+</head>
+<body >
+{{!-- {{>shared/header/header navs=data.commonData.pageMenuData orgInfo=data.commonData.organizationInfoData}} --}}

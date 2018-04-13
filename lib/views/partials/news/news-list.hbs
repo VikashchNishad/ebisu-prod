@@ -1,0 +1,78 @@
+<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+
+    {{#checkAndBindList lstNews}}
+      <div >
+        <div class="row">
+            <div class="col-md-2">
+                    <div class="blog-post-image">
+            <a href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}">
+                {{#checkAndBindList image}}
+                    <img class="img-responsive"
+                         src="{{cloudinaryUrl imageName option='{"width":"300", "height":"300", "crop":"thumb", "gravity":"face"}'}}"
+                         alt="{{imageAltText}}"/>
+                {{/checkAndBindList}}
+            </a>
+        </div>
+            </div>
+             <div class="col-md-10">
+                <div class="blog-content">
+            <h2 class="blogpost-title" style="color:#fff;">
+                <a href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}">{{newsTitle}}</a>
+            </h2>
+          {{!--   <div class="blog-meta">
+                <span>{{date addedOn}}</span>
+                <span>by <a href="">{{newsAuthor}}</a></span>
+                <span>Page Views:  <a href="">{{pageViews}}</a></span>
+            </div> --}}
+            <p style="    color: #fff;">
+                {{{newsSummary}}}
+            </p>
+            <a  style="display: block;
+    margin-left: auto;
+    margin-right: auto;color:#fff;" href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}" class="btn btn-dafault btn-details">Continue
+                Reading</a>
+                 </div>
+        </div>
+             </div>
+        
+     
+
+    {{else}}
+        {{>shared/no-data-found}}
+    {{/checkAndBindList}}
+</article>
+
+{{!-- <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                    <div class="blog-post-image">
+            <a href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}">
+                {{#checkAndBindList image}}
+                    <img class="img-responsive"
+                         src="{{cloudinaryUrl imageName option='{"width":"170", "height":"130", "crop":"thumb", "gravity":"face"}'}}"
+                         alt="{{imageAltText}}"/>
+                {{/checkAndBindList}}
+            </a>
+        </div>
+            </div>
+             <div class="col-md-5">
+                <div class="blog-content">
+            <h2 class="blogpost-title">
+                <a href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}">{{newsTitle}}</a>
+            </h2>
+            <div class="blog-meta">
+                <span>{{date addedOn}}</span>
+                <span>by <a href="">{{newsAuthor}}</a></span>
+                <span>Page Views:  <a href="">{{pageViews}}</a></span>
+            </div>
+            <p>
+                {{{newsSummary}}}
+            </p>
+            <a href="{{hostUrl}}/news-detail/{{dateFormatter addedOn}}/{{urlSlog}}" class="btn btn-dafault btn-details">Continue
+                Reading</a>
+        </div>
+             </div>
+        
+     
+    </div>
+ --}}

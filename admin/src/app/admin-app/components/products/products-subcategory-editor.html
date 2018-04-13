@@ -1,0 +1,49 @@
+<div class="row form-outer" fadeInDirective>
+    <div class="col-lg-12 form-wrapper">
+        <form role="form" novalidate [formGroup]="productsSubCategoryForm" (ngSubmit)="saveProductsCategory()">
+            <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Category</label>
+                  <select [(ngModel)]="objProductsSubCat.categoryID" class="form-control"
+                        [formControl]="productsSubCategoryForm.controls['selectCategory']">
+                    <option value="" selected>Select Category</option>
+                    <option *ngFor="let obj of objCatList" [value]="obj._id">{{obj.categoryName}}</option>
+                  </select>
+                  <control-messages [isSubmitted]="isSubmitted"
+                                    [control]="productsSubCategoryForm.controls['selectCategory']"></control-messages>
+                </div>
+                <div class="form-group">
+                    <label>SubCategory Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="objProductsSubCat.subCategoryName" name="subcategoryName"
+                           placeholder="Enter SubCategory" [formControl]="productsSubCategoryForm.controls['productsSubCategory']">
+                    <control-messages [isSubmitted]="isSubmitted"
+                                      [control]="productsSubCategoryForm.controls['productsSubCategory']"></control-messages>
+                </div>
+                <div class="form-group">
+                    <label>SubCategory Description</label>
+                    <textarea class="form-control" [(ngModel)]="objProductsSubCat.subCategoryDescription"
+                              name="subcategoryDescription"
+                              placeholder="Enter SubCategory Description"
+                              [formControl]="productsSubCategoryForm.controls['productsSubCategoryDescription']">
+                    </textarea>
+                    <control-messages [isSubmitted]="isSubmitted"
+                                      [control]="productsSubCategoryForm.controls['productsSubCategoryDescription']"></control-messages>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <md-checkbox [checked]="objProductsSubCat.active" formControlName="active"
+                                     [(ngModel)]="objProductsSubCat.active">
+                            Active
+                        </md-checkbox>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" processing><i class="fa fa-floppy-o"></i>  Save</button>
+                            <button type="button" (click)="triggerCancelForm()" class="btn  btn-danger"><i class="fa fa-times"></i> Cancel
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
